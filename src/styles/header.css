@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.barra-superior-header {
+    background-color: #F4ECE0;
+}
+
+.texto-barra-superior {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin:0;
+    text-align: center;
+}
+
+.nav-container-desktop {
+    display: flex;
+}
+
+.nav-desktop {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ul-nav-desktop {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.li-nav-desktop {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.search-form-desktop {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px, 20px;
+    border-radius: 60px;
+    background-color: white;
+    outline: solid thin black;
+    
+}
+
+.input-search-desktop {
+    width: 80%;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding-left: .7rem;
+    
+}
+
+.search-button-desktop {
+    width: 20%;
+    border: none;
+    background: white;
+    padding-right: .5rem;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.search-button-desktop:hover {
+    border-radius: 50%;
+}
+
+.nav-buttons-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-button-desktop {
+    margin-left: 2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.profile-button-desktop:hover {
+    
+}
+
+.compras-button-desktop {
+    border:0;
+    background-color: transparent;
+}
