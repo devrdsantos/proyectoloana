@@ -1,0 +1,63 @@
+.z-index-menu-nav-mobile {
+    position:absolute;
+    z-index: 1100;
+}
+
+.overlay-modal-header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.contenedor-modal-nav-header {
+    width: 62%;
+    min-height: 800px;
+    background: #fff;
+    position: relative;
+    z-index: 999 !important;
+}
+
+.entry-user-mobile-header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.entry-user-modal-header-button {
+    background: transparent;
+    color: white;
+}
+
+.search-modal-nav-header {
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor-ul-modal-header {
+    margin-top: 30px;
+}
+
+.ul-modal-header-mobile {
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.ul-modal-header-mobile li {
+    font-size: 30px;
+    font-family: "Montserrat";
+}
+
+.exit-button-modal-nav-header {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    border: none;
+    background: transparent;
+}
+

@@ -9,9 +9,8 @@ function App() {
     <div className="App">
       <Header />
       <CarouselMain />
-    <Footer />
+      <Footer />
     </div>
-
   );
 }
 

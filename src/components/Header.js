@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/header.css";
 import logoHeaderDesktop from "../assets/logo-header-desktop.png";
 import searchIcon from "../assets/search-icon.png";
@@ -6,12 +6,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
   faUserCircle,
-  faCircleUser,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
+import ModalNavHeaderMobile from "./ModalNavHeaderMobile";
 
 function Header() {
+  const [estadoModal, cambiarEstadoModal] = useState(false);
+
   return (
     <header>
+      {/* ESTE ES EL HEADER DESKTOP QUE SE VA A UTILIZAR PARA ESCRITORIO */}
       <div className="header-desktop">
         <div className="barra-superior-header">
           <p className="texto-barra-superior">
@@ -21,7 +25,12 @@ function Header() {
         </div>
         <div className="nav-container-desktop">
           <div className="logo-header-desktop">
-            <img src={logoHeaderDesktop} alt="logo del header" />
+            {/* ESTA IMAGEN DEL LOGO DE DESKTOP QUE LLEVA VARIAS MEDIAQUERIES */}
+            <img
+              src={logoHeaderDesktop}
+              className="img-logo-header-desktop"
+              alt="logo del header"
+            />
           </div>
           <div className="nav-desktop">
             <ul className="ul-nav-desktop">
@@ -56,6 +65,38 @@ function Header() {
             </button>
           </div>
         </div>
+      </div>
+      {/* ESTE ES EL HEADER MOBILE QUE SE VA A MOSTRAR PARA LOS CELULARES */}
+      <div className="header-mobile">
+        <div className="barra-superior-header">
+          <p className="texto-barra-superior">
+            3 cuotas sin interés con todas las tarjetas de crédito
+          </p>
+          <p className="texto-barra-superior">
+            Envío gratis a todo el país desde $40.000
+          </p>
+        </div>
+        <nav className="container-header-mobile">
+          <div className="nav-button-mobile-container">
+            <button className="nav-button-mobile">
+              <FontAwesomeIcon
+                onClick={() => cambiarEstadoModal(!estadoModal)}
+                icon={faBars}
+                className="fa-xl"
+              />
+              <ModalNavHeaderMobile
+                estado={estadoModal}
+                cambiarEstado={cambiarEstadoModal}
+              ></ModalNavHeaderMobile>
+            </button>
+          </div>
+          <div className="logo-mobile">
+            <img src={logoHeaderDesktop} className="img-logo-mobile" alt="" />
+          </div>
+          <div className="compras-button-mobile">
+            <FontAwesomeIcon icon={faBagShopping} className="fa-xl" />
+          </div>
+        </nav>
       </div>
     </header>
   );
