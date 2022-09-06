@@ -176,3 +176,30 @@ align-items: center;
     }
 
   }
+
+
+  /* ESTILOS EXCEPCIONALES QUE VAN AL footer */
+
+  .button-decoration-footer {
+    background-color: black;
+  }
+
+  .button-decoration-footer:hover {
+    color: white;
+    
+  }
+
+  .link-footer-color{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link-footer-color:hover {
+    color: white;
+  }
+
+  .font-size-footer-logo-direction-number {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
