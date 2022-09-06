@@ -47,6 +47,15 @@ align-items: center;
     padding-left: 2rem;
 }
 
+.link-style{
+    text-decoration: none;
+    color: black;
+}
+
+.link-style:hover{
+    color: #00000040;
+}
+
 .search-form-desktop {
     width: 100%;
     max-width: 200px;

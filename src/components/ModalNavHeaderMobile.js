@@ -3,6 +3,7 @@ import "../styles/modalnavheadermobile.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import searchIcon from "../assets/search-icon.png";
+import { Link } from "react-router-dom";
 
 const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
   return (
@@ -36,10 +37,42 @@ const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
             </div>
             <div className="contenedor-ul-modal-header">
               <ul className="ul-modal-header-mobile">
-                <li>Jeans</li>
-                <li>Shorts</li>
-                <li>Camperas</li>
-                <li>Ofertas</li>
+                <li>
+                  <Link
+                    onClick={() => cambiarEstado(false)}
+                    to="/jeans"
+                    className="link-style"
+                  >
+                    JEANS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={() => cambiarEstado(false)}
+                    to="/shorts"
+                    className="link-style"
+                  >
+                    SHORTS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={() => cambiarEstado(false)}
+                    to="/camperas"
+                    className="link-style"
+                  >
+                    CAMPERAS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={() => cambiarEstado(false)}
+                    to="/ofertas"
+                    className="link-style"
+                  >
+                    OFERTAS
+                  </Link>
+                </li>
               </ul>
             </div>
             <button
