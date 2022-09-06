@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
   faUserCircle,
-  faCircleUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
