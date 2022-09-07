@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.barra-superior-header {
+    background-color: #F4ECE0;
+}
+
+.texto-barra-superior {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin:0;
+    text-align: center;
+}
+
+.nav-container-desktop {
+    display: flex;
+}
+
+.nav-desktop {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ul-nav-desktop {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.li-nav-desktop {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.link-style{
+    text-decoration: none;
+    color: black;
+}
+
+.link-style:hover{
+    color: #00000040;
+}
+
+.search-form-desktop {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px, 20px;
+    border-radius: 60px;
+    background-color: white;
+    outline: solid thin black;
+    
+}
+
+.input-search-desktop {
+    width: 80%;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding-left: .7rem;
+    
+}
+
+.search-button-desktop {
+    width: 20%;
+    border: none;
+    background: white;
+    padding-right: .5rem;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.search-button-desktop:hover {
+    border-radius: 50%;
+}
+
+.nav-buttons-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-button-desktop {
+    margin-left: 2rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.profile-button-desktop:hover {
+    
+}
+
+.compras-button-desktop {
+    border:0;
+    background-color: transparent;
+}
+
+.container-header-mobile {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-button-mobile-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button-mobile{
+    border:0;
+    background-color: transparent;
+}
+
+.compras-button-mobile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo-mobile{
+    width: 166px;
+}
+
+@media (max-width: 800px) {
+    .img-logo-header-desktop {
+      width: 300px;
+    }
+
+
+  }
+
+  @media (max-width: 600px) {
+    .img-logo-header-desktop {
+      width: 250px;
+    }
+
+
+  }
+
+@media (max-width: 500px) {
+    .header-desktop {
+      display: none;
+    }
+
+    .texto-barra-superior{
+        font-size: 10px;
+    }
+
+
+  }
+
+  @media (min-width: 500px) {
+    .header-mobile {
+      display: none;
+    }
+
+  }
+
+
+  /* ESTILOS EXCEPCIONALES QUE VAN AL footer */
+
+  .button-decoration-footer {
+    background-color: black;
+  }
+
+  .button-decoration-footer:hover {
+    color: white;
+    
+  }
+
+  .link-footer-color{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .link-footer-color:hover {
+    color: white;
+  }
+
+  .font-size-footer-logo-direction-number {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
