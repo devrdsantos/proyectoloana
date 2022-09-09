@@ -12,9 +12,13 @@
     background: rgba(0, 0, 0, .5);
 }
 
+.contenedor-entry-user-mobile-header{
+    margin-bottom:3rem;
+}
+
 .contenedor-modal-nav-header {
     width: 62%;
-    min-height: 800px;
+    min-height: 100%;
     background: #fff;
     position: relative;
     z-index: 999 !important;
@@ -30,11 +34,42 @@
 .entry-user-modal-header-button {
     background: transparent;
     color: white;
+    border: 0;
+    border-style: none;
+    border-color: black;
 }
 
 .search-modal-nav-header {
     display:flex;
     justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.search-form-mobile{
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px, 20px;
+    border-radius: 60px;
+    background-color: #E2E2E2;
+    outline: solid thin black;
+}
+
+.input-search-mobile{
+    width: 80%;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding-left: .7rem;
+}
+
+.search-button-desktop{
+    background-color: #E2E2E2;
+    border-radius:60px;
 }
 
 .contenedor-ul-modal-header {
@@ -45,12 +80,15 @@
     list-style: none;
     display:flex;
     flex-direction: column;
-    gap:3rem;
+    justify-content: flex-start;
+    gap:4rem;
 }
 
 .ul-modal-header-mobile li {
     font-size: 30px;
     font-family: "Montserrat";
+    display: flex;
+    justify-content: flex-start;
 }
 
 .exit-button-modal-nav-header {
@@ -59,5 +97,7 @@
     top: 70px;
     border: none;
     background: transparent;
+    width: 2rem;
+    height: 2rem;
 }
 
