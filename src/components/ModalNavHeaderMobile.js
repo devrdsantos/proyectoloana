@@ -30,7 +30,7 @@ const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
                   className="input-search-mobile"
                   placeholder="Buscar"
                 />
-                <button type="submit" className="search-button-desktop">
+                <button type="submit" className="search-button-mobile">
                   <img src={searchIcon} alt="icono de busqueda" />
                 </button>
               </form>

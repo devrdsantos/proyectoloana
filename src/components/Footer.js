@@ -4,12 +4,13 @@ import logoFooter from "../assets/logo-footer-negro.png";
 import iconosFooter from "../assets/img__vectores/Vector.png";
 import iconosFooter2 from "../assets/img__vectores/Vector_w.png";
 import { Link } from "react-router-dom";
-import "../styles/header.css";
+import "../styles/footer.css";
 
 function Footer() {
   return (
     <footer>
-      <div className="container-fluid">
+      {/* FOOTER DESKTOP */}
+      <div className="container-fluid footer-desktop">
         <div className="row p-5 pb-2 bg-black text-white">
           <div className="col-xs-12 col-md-6 col-lg-3">
             <div className="h3">
@@ -93,6 +94,35 @@ function Footer() {
           <div className="text-center pt-3 col-xs-12">
             © Loana Jeans 2020 - 2022 . Todos los derechos reservados.
           </div>
+        </div>
+      </div>
+      {/* FOOTER MOBILE */}
+      <div className="container-fluid bg-black footer-mobile">
+        <div className="d-flex justify-content-between">
+          <div className="d-flex flex-column color-footer-mobile">
+            <p>Contacto</p>
+            <p>Av. San Martín 1587, CABA, Buenos Aires</p>
+            <p>(+54) 9 11-5674-1599</p>
+          </div>
+          <div className="d-flex flex-column color-footer-mobile">
+            <p>Seguinos</p>
+            <div className="d-flex flex-column">
+              <button className=" button-decoration-footer text-secondary text-decoration-none">
+                <Link className=" link-footer-color" to="/">
+                  Instagram
+                </Link>
+              </button>
+              <button className=" button-decoration-footer text-secondary text-decoration-none">
+                <Link className=" link-footer-color" to="/">
+                  Facebook
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="text-center pt-3 copyright-footer-mobile">
+          {" "}
+          © Loana Jeans 2020 - 2022 . Todos los derechos reservados.
         </div>
       </div>
     </footer>
