@@ -96,6 +96,8 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      
       {/* FOOTER MOBILE */}
       <div className="container-fluid bg-black footer-mobile">
         <div className="d-flex justify-content-between">
