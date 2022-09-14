@@ -97,7 +97,7 @@ function Header() {
         </div>
         <nav className="container-header-mobile">
           <div className="nav-button-mobile-container">
-            <button className="nav-button-mobile">
+            <div className="nav-button-mobile">
               <FontAwesomeIcon
                 onClick={() => cambiarEstadoModal(!estadoModal)}
                 icon={faBars}
@@ -107,7 +107,7 @@ function Header() {
                 estado={estadoModal}
                 cambiarEstado={cambiarEstadoModal}
               ></ModalNavHeaderMobile>
-            </button>
+            </div>
           </div>
           <div className="logo-mobile">
             <Link to="/">
