@@ -4,17 +4,17 @@ import logoFooter from "../assets/logo-footer-negro.png";
 import iconosFooter from "../assets/img__vectores/Vector.png";
 import iconosFooter2 from "../assets/img__vectores/Vector_w.png";
 import { Link } from "react-router-dom";
-import "../styles/header.css";
+import "../styles/footer.css";
 
 function Footer() {
     return (
-        <footer>
-        <div className="container-fluid">
-            <div className="row p-5 pb-2 bg-black text-white">
+    <footer>
+      {/* FOOTER DESKTOP */}
+        <div className="container-fluid footer-desktop">
+        <div className="row p-5 pb-2 bg-black text-white">
             <div className="col-xs-12 col-md-6 col-lg-3">
-                <div className="h3">
+            <div className="h3">
                 <img src={logoFooter} width="200" alt="logo negro" />
-                </div>
             </div>
 
             <div className="col-xs-12 col-md-6 col-lg-3">
@@ -94,17 +94,39 @@ function Footer() {
                 © Loana Jeans 2020 - 2022 . Todos los derechos reservados.
             </div>
         </div>
-    </div>
-    
-        <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
-        crossorigin="anonymous">
-        </script>     
-        {/* Footer Desktop */}  
+      </div>
+      </div>
 
-        {/* Footer movil */}
-        
+      {/* FOOTER MOBILE */}
+      <div className="container-fluid bg-black footer-mobile">
+        <div className="d-flex justify-content-between">
+          <div className="d-flex flex-column color-footer-mobile">
+            <p>Contacto</p>
+            <p>Av. San Martín 1587, CABA, Buenos Aires</p>
+            <p>(+54) 9 11-5674-1599</p>
+          </div>
+          <div className="d-flex flex-column color-footer-mobile">
+            <p>Seguinos</p>
+            <div className="d-flex flex-column">
+              <button className=" button-decoration-footer text-secondary text-decoration-none">
+                <Link className=" link-footer-color" to="/">
+                  Instagram
+                </Link>
+              </button>
+              <button className=" button-decoration-footer text-secondary text-decoration-none">
+                <Link className=" link-footer-color" to="/">
+                  Facebook
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="text-center pt-3 copyright-footer-mobile">
+          {" "}
+          © Loana Jeans 2020 - 2022 . Todos los derechos reservados.
+        </div>
+      </div>
+
     </footer>
     );
 }

@@ -67,8 +67,11 @@
     padding-left: .7rem;
 }
 
-.search-button-desktop{
-    background-color: #E2E2E2;
+.search-button-mobile{
+    width: 20%;
+    border: none;
+    background: #E2E2E2;
+    padding-right: .5rem;
     border-radius:60px;
 }
 
