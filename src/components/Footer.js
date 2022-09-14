@@ -18,7 +18,7 @@ function Footer() {
             </div>
 
             <div className="col-xs-12 col-md-6 col-lg-3">
-                <p className="h5 mb-2 text-white">Productos</p>
+                <p className="h5 mb-2 text-white bbt-1">Productos</p>
                 <div className="mb-2">
                 <button className="button-decoration-footer text-secondary text-decoration-none">
                     <Link className=" link-footer-color" to="/jeans">
@@ -104,6 +104,7 @@ function Footer() {
         {/* Footer Desktop */}  
 
         {/* Footer movil */}
+        
     </footer>
     );
 }
