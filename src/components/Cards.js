@@ -111,7 +111,7 @@ const CardSection = styled.section `
     justify-content: space-around;
     gap: 100px ;
     @media (max-width: 768px) {
-        gap: 30px;
+        gap: 15px;
     }
 `;
 const TextoTitulo = styled.h1 `
