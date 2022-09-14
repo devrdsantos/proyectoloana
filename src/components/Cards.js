@@ -235,12 +235,8 @@ const CardsHome = styled.div `
             display: none;
         }
     }
-    
   }
-  
-
 `;
-
 const Controles = styled.div`
     position: absolute;
     top: 31px;
