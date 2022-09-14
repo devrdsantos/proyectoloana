@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.size-filter-container {
+  font-family: "Montserrat";
+}
+
+.filter-for {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.size-p {
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.checkbox-size-div {
+  margin-left: 2rem;
+}
+
+.size-checkbox {
+  margin-right: 5px;
+}
