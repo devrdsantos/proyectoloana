@@ -20,6 +20,7 @@ function Footer() {
 
           <div className="col-xs-12 col-md-6 col-lg-3">
             <p className="h5 mb-2 text-white">Productos</p>
+            <span className="aux-desktop-border-footer"></span>
             <div className="mb-2">
               <button className="button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/jeans">
@@ -52,6 +53,7 @@ function Footer() {
 
           <div className="col-xs-12 col-md-6 col-lg-3">
             <p className="h5 mb-2 text-white">Contacto</p>
+            <span className="aux-desktop-border-footerContacto"></span>
             <div className="d-flex mb-2 text-secondary">
               {" "}
               <img
@@ -73,7 +75,8 @@ function Footer() {
           </div>
 
           <div className="col-xs-12 col-md-6 col-lg-3">
-            <p className="h5 text-white">Nuestras Redes</p>
+            <p className="h5 text-white">Seguinos</p>
+            <span className="aux-desktop-border-footer"></span>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/jeans">
@@ -97,17 +100,19 @@ function Footer() {
         </div>
       </div>
 
-      
+
       {/* FOOTER MOBILE */}
       <div className="container-fluid bg-black footer-mobile">
+
         <div className="d-flex justify-content-between">
-          <div className="d-flex flex-column color-footer-mobile">
-            <p>Contacto</p>
+            
+          <div className="d-flex flex-column color-footer-mobile m-3 p-1 " >
+            <p className="border-bottom border-white ">Contacto</p>
             <p>Av. San Martín 1587, CABA, Buenos Aires</p>
             <p>(+54) 9 11-5674-1599</p>
           </div>
-          <div className="d-flex flex-column color-footer-mobile">
-            <p>Seguinos</p>
+          <div className="d-flex flex-column color-footer-mobile m-3 p-1 " >
+            <p className="border-bottom border-white">Seguinos</p>
             <div className="d-flex flex-column">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/">
