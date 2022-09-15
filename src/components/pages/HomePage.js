@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <main>
       <CarouselMain />
-      <Cards />
+      <Cards showcartel />
     </main>
   );
 }

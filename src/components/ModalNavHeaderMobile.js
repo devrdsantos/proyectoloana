@@ -12,25 +12,25 @@ const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
         <div className="overlay-modal-header">
           <div className="contenedor-modal-nav-header">
             <div className="contenedor-entry-user-mobile-header">
-              <div className="entry-user-mobile-header">
+              <div className="entry-user-mobile-header mb-5">
                 <button className="entry-user-modal-header-button">
                   <FontAwesomeIcon icon={faUserCircle} className="fa-xl" />{" "}
                   Ingresar / Registrarse
                 </button>
               </div>
             </div>
-            <div className="search-modal-nav-header mt-5 mb-5">
+            <div className="search-modal-nav-header">
               <form
                 action="https://www.google.com/search"
                 method="get"
-                className="search-form-desktop"
+                className="search-form-mobile"
               >
                 <input
                   type="text"
-                  className="input-search-desktop"
+                  className="input-search-mobile"
                   placeholder="Buscar"
                 />
-                <button type="submit" className="search-button-desktop">
+                <button type="submit" className="search-button-mobile">
                   <img src={searchIcon} alt="icono de busqueda" />
                 </button>
               </form>
@@ -81,10 +81,10 @@ const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="25"
+                height="25"
                 fill="currentColor"
-                class="bi bi-x-lg"
+                className="bi bi-x-lg"
                 viewBox="0 0 16 16"
               >
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
