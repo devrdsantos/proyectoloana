@@ -1,0 +1,46 @@
+.button-decoration-footer {
+  background-color: black;
+}
+
+.button-decoration-footer:hover {
+  color: white;
+}
+
+.link-footer-color {
+  color: white;
+  text-decoration: none;
+}
+
+.link-footer-color:hover {
+  color: white;
+}
+
+.font-size-footer-logo-direction-number {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.copyright-footer-mobile {
+  color: #e2e2e2;
+}
+
+.color-footer-mobile {
+  color: #e2e2e2;
+}
+
+@media (max-width: 500px) {
+  .footer-desktop {
+    display: none;
+  }
+
+  .texto-barra-superior {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .footer-mobile {
+    display: none;
+  }
+}
