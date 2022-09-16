@@ -89,12 +89,11 @@ function Cards () {
     };
 
     return (
-        <Contenedor>
+        <div>
             <div style={{display:"flex", width:"100%", alignItems:"center", padding:"5px",justifyContent:"space-between"}}>
             <TextoTitulo>ÚLTIMAS NOVEDADES</TextoTitulo>
             <Filtros ordenar={ordenar}/>
             </div>
-            <TodoElContenido>
                 <CardSection>
                 {
                 products.map(({id,talles,imagen,title,price,alt}) =>
@@ -109,10 +108,10 @@ function Cards () {
                         <div className="contenedor-imagen">
                             <img src={imagen} alt={alt} />
                             <Controles className="hidenbutton">
-                                <Boton onClick={previusImg}>
+                                <Boton>
                                     <FlechaIzquierda />
                                 </Boton>
-                                <Boton onClick={nextImg} derecho>
+                                <Boton derecho>
                                     <FlechaDerecha />
                                 </Boton>
                             </Controles>
@@ -123,8 +122,7 @@ function Cards () {
                     )
                 }
                 </CardSection>
-            </TodoElContenido>
-    </Contenedor>
+        </div>
     );
 }
 const CardSection = styled.section `
@@ -150,7 +148,7 @@ const CardsHome = styled.div `
     min-width: 258px;
     margin: 20px 20px 0 20px;
     position: relative;
-    & ul{ 
+    & ul{
         display: none;
         align-items: center;
         position: absolute;
@@ -182,7 +180,7 @@ const CardsHome = styled.div `
         top : 8px;
         left: 219px;
         width: 30px;
-        height: 30px; 
+        height: 30px;
         border: 0px;
     }
     .heart-icon svg {
@@ -195,7 +193,7 @@ const CardsHome = styled.div `
     .contenedor-imagen{
         width: 100%;
         height: 331px;
-        
+
     }
     & img {
         width: 100%;
