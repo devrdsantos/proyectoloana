@@ -1,11 +1,13 @@
+import React, {useState} from "react";
 import styled from "styled-components";
+import Filtros from "./Filtros";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import img1 from "../assets/img_cards/imagen-1.jpg";
 import img2 from "../assets/img_cards/imagen-2.jpg";
 import img3 from "../assets/img_cards/imagen-3.jpg";
 const datos = [
-    {   
+    {
         id : 1,
         imagen :img1,
         alt:"img not found",
@@ -18,7 +20,7 @@ const datos = [
         imagen : img2,
         alt:"img not found",
         title: "Jean Oxford",
-        price: 2000,
+        price: 1200,
         talles: [38 , 40 , 42]
     },
     {
@@ -34,7 +36,7 @@ const datos = [
         imagen :img3,
         alt:"img not found",
         title: "Jean Oxford",
-        price: 2500,
+        price: 2800,
         talles: [38 , 40 , 42]
     },
     {
@@ -53,15 +55,45 @@ const datos = [
         price: 2500,
         talles: [38 , 40 , 42]
     }];
-    
+
+
+
 function Cards () {
+    const [products, setProducts] = useState(datos);
+
+    const ordenar = (e) => {
+
+        const ordenAsc = (arr) => arr.sort((a, b) => a.price > b.price);
+        const ordenDes = (arr) => arr.sort((a, b) => a.price < b.price);
+
+        switch (e.target.value) {
+            case "ascendente":
+
+                setProducts([...ordenAsc(products)]);
+                break;
+
+            case "descendente":
+
+                setProducts([...ordenDes(products)]);
+                break
+
+            default:
+                setProducts([...datos]);
+                return;
+        }
+
+    };
+
     return (
         <Contenedor>
+            <div style={{display:"flex", width:"100%", alignItems:"center", padding:"5px",justifyContent:"space-between"}}>
             <TextoTitulo>ÚLTIMAS NOVEDADES</TextoTitulo>
+            <Filtros ordenar={ordenar}/>
+            </div>
             <TodoElContenido>
                 <CardSection>
-                {   
-                datos.map(({id,talles,imagen,title,price,alt}) =>
+                {
+                products.map(({id,talles,imagen,title,price,alt}) =>
                     <CardsHome key={id} >
                         <span>NEW</span>
                         <ul>
@@ -81,7 +113,6 @@ function Cards () {
                 </CardSection>
             </TodoElContenido>
     </Contenedor>
-        
     );
 }
 const Contenedor = styled.div`

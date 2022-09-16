@@ -34,7 +34,7 @@ function Footer() {
               </button>
             </div>
             <div className="mb-2">
-              <button className=" button-decoration-footer text-secondary text-decoration-none">
+              <button className=" button-decoration-footer text-secondary text-decoration-none compras-button-mobile">
                 <Link className=" link-footer-color" to="/jeans">
                   Camperas
                 </Link>
