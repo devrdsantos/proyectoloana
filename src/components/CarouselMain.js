@@ -6,7 +6,7 @@ import "../styles/carousel.css";
 function CarouselFadeExample() {
   return (
     <Carousel fade controls={true}>
-      <Carousel.Item interval={5000}>
+      <Carousel.Item className="z-index-carousel" interval={5000}>
         <img
           className="d-block w-100 img-size-carousel1"
           src={imagen1}

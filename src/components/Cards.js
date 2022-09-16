@@ -78,7 +78,7 @@ function Cards () {
                 break
 
             default:
-                setProducts([...products]);
+                setProducts([...datos]);
                 return;
         }
 
