@@ -1,9 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+.footer-desktop {
+  font-family: "Outfit", sans-serif;
+}
+
 .button-decoration-footer {
   background-color: black;
 }
 
 .button-decoration-footer:hover {
   color: white;
+}
+
+.div-p-footer-contacto,
+.div-p-footer-seguinos,
+.div-p-footer-masinformacion {
+  position: relative;
+}
+
+.border-bottom-masinformacion {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.border-bottom-contacto {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.border-bottom-seguinos {
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 80px;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.padding-seguinos {
+  padding-left: 80px;
 }
 
 .link-footer-color {
