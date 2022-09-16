@@ -61,7 +61,7 @@ function Footer() {
                 src={iconosFooter}
                 alt="ubicacion"
               />{" "}
-              <p className=" link-footer-color">Av. San Martín 1587, CABA</p>
+              <p className=" link-footer-color">Av. San Martín 1587, CABA Buenos Aires</p>
             </div>
             <div className="d-flex mb-2 text-secondary">
               {" "}
