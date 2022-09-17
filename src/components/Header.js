@@ -81,10 +81,14 @@ function Header() {
           </div>
           <div className="nav-buttons-desktop">
             <button className="profile-button-desktop">
-              <img src={userVector} alt="logo del user" />
+              <Link to="/user">
+                <img src={userVector} alt="logo del user" />
+              </Link>
             </button>
             <button className="compras-button-desktop">
-              <img src={infoVector} alt="icono de ayuda" />
+              <Link to="/faq">
+                <img src={infoVector} alt="icono de ayuda" />
+              </Link>
             </button>
             <button className="compras-button-desktop pe-5">
               <img src={bagVector} alt="icono de la bolsa de compras" />

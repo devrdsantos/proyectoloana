@@ -8,6 +8,10 @@ import ShortsPage from "./components/pages/ShortsPage";
 import OfertasPage from "./components/pages/OfertasPage";
 import CamperasPage from "./components/pages/CamperasPage";
 import HomePage from "./components/pages/HomePage";
+import EnterProfile from "./components/pages/EnterProfile";
+import NovedadesPage from "./components/pages/NovedadesPage";
+import FaqPage from "./components/pages/FaqPage";
+import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
           <Route path="/shorts" element={<ShortsPage />} />
           <Route path="/camperas" element={<CamperasPage />} />
           <Route path="/ofertas" element={<OfertasPage />} />
+          <Route path="/novedades" element={<NovedadesPage />} />
+          <Route path="/user" element={<EnterProfile />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/item" element={<ItemDescriptionPage />} />
         </Routes>
         <Footer />
       </Router>

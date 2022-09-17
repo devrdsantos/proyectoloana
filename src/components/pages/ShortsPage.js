@@ -1,8 +1,7 @@
 import React from "react";
-import UserRegister from "../UserRegister";
 
 function ShortsPage() {
-  return <UserRegister />
+  return <h1>Shorts</h1>;
 }
 
 export default ShortsPage;

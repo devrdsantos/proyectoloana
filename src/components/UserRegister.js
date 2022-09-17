@@ -1,5 +1,4 @@
 import React from "react";
-import loana1 from "../assets/loana1.png";
 import google from "../assets/google.png";
 import facebook from "../assets/facebook.png";
 import "../styles/userregister.css";
@@ -8,9 +7,9 @@ function UserRegister() {
   return (
     <div className="contenedor-user-register">
       <div className="cont-principal">
-        <div className="contenedor-logo">
+        {/* <div className="contenedor-logo">
           <img src={loana1} alt="" />
-        </div>
+        </div> */}
         <div className="contenedor-formulario">
           <div className="btn-registro-inicio-sesion">
             <button className="btn-size-register">REGISTRARSE</button>{" "}
