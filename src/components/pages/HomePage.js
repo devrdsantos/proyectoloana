@@ -4,6 +4,7 @@ import Cards from "../Cards.js";
 import Whyloana from "../Whyloana.js";
 import Mainofertasynovedades from "../Mainofertasynovedades.js";
 import styled from "styled-components";
+import DataHome from "../DataHome.js";
 
 function HomePage() {
   return (
@@ -15,7 +16,7 @@ function HomePage() {
         <h1>LO MÁS VENDIDO</h1>
         <DivPosition />
       </LoMasVendido>
-      <Cards />
+      <Cards data={DataHome} />
     </main>
   );
 }

@@ -1,9 +1,14 @@
 import React from "react";
+import PageSectionImage from "../PageSectionImage";
+import ImagePantalones from "../../assets/img-pantalones.png";
 
 function OfertasPage() {
   return (
     <div>
-      <h1>Ofertas</h1>
+      <PageSectionImage
+        ImgPantalones={ImagePantalones}
+        h1PageSection={"OFERTAS"}
+      />
     </div>
   );
 }
