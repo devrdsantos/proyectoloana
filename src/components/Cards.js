@@ -1,22 +1,23 @@
 import styled from "styled-components";
 import Card from "./Card";
+
 function Cards(props) {
   return (
-        <CardSection>
-          {props.info.map((e) => (
-            <Card
-              key={e.id}
-              talles={e.talles}
-              img={e.imagen}
-              titulo={e.title}
-              precio={e.price}
-              descripcion={e.alt}
-              descuentos={e.descuentos}
-              nuevo={e.nuevo}
-              cartel={props.showcartel}
-            />
-          ))}
-        </CardSection>
+    <CardSection>
+      {props.data.map((e) => (
+        <Card
+          key={e.id}
+          talles={e.talles}
+          img={e.imagen}
+          titulo={e.title}
+          precio={e.price}
+          descripcion={e.alt}
+          descuentos={e.descuentos}
+          nuevo={e.nuevo}
+          cartel={props.showcartel}
+        />
+      ))}
+    </CardSection>
   );
 }
 const CardSection = styled.section`

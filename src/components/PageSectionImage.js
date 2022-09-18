@@ -19,23 +19,28 @@ const ContainerPageSectionImage = styled.div`
   position: relative;
   width: 100%;
   height: 400px;
-  img{
+  img {
     width: 100%;
     height: 100%;
   }
+  margin-bottom: 1.5rem;
 `;
 const TituloPageSectionImage = styled.div`
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 45%;
+  left: 41%;
   transform: translate (-50% -50%);
   color: white;
+  h1 {
+    font-size: 36px;
+    font-family: "Outfit";
+  }
 `;
 
 const UnderlineBorder = styled.div`
   position: absolute;
-  top: 65%;
-  left: 42%;
+  top: 59%;
+  left: 37%;
   transform: translate (-50% -50%);
 `;
 
