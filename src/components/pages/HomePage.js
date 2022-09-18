@@ -6,7 +6,10 @@ function HomePage() {
   return (
     <main>
       <CarouselMain />
-      <Cards showcartel />
+      <div>
+        <h1>LO MÁS VENDIDO</h1>
+      </div>
+      <Cards />
     </main>
   );
 }

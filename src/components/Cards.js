@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import img1 from "../assets/img_cards/imagen-1.jpg";
-import img2 from "../assets/img_cards/imagen-2.jpg";
-import img3 from "../assets/img_cards/imagen-3.jpg";
+import img1 from "../assets/img_cards/modelo1.png";
+import img2 from "../assets/img_cards/modelo2.png";
+import img3 from "../assets/img_cards/modelo3.png";
+import img4 from "../assets/img_cards/modelo4.png";
 import Card from "./Card";
 const datos = [
     {   
         id : 1,
-        imagen :img1,
+        imagen :[img1,img2,img3],
         alt:"img not found",
         title: "Jean Oxford",
         price: 1500,
@@ -16,7 +17,7 @@ const datos = [
     },
     {
         id : 2,
-        imagen : img2,
+        imagen : [img2,img3,img1],
         alt:"img not found",
         title: "Jean Oxford",
         price: 2000,
@@ -26,7 +27,7 @@ const datos = [
     },
     {
         id : 3,
-        imagen :img3,
+        imagen :[img3,img2,img1],
         alt:"img not found",
         title: "Jean Oxford",
         price: 2500,
@@ -36,51 +37,30 @@ const datos = [
     },
     {
         id : 4,
-        imagen :img3,
+        imagen :[img4,img2,img3],
         alt:"img not found",
         title: "Jean Oxford",
         price: 2500,
         talles: [38 , 40 , 42],
         nuevo:true
-    },
-    {
-        id : 5,
-        imagen :img3,
-        alt:"img not found",
-        title: "Jean Oxford",
-        price: 2500,
-        talles: [38 , 40 , 42 , 46],
-        descuentos : 15,
-        nuevo:true
-    },
-    {
-        id : 6,
-        imagen :img3,
-        alt:"img not found",
-        title: "Jean Oxford",
-        price: 2500,
-        talles: [38 , 40 , 42],
-        descuentos : 0,
-        nuevo: true
     }];
     
 function Cards (props) {
     return (
         <div>
-            <TextoTitulo>ÚLTIMAS NOVEDADES</TextoTitulo>
             <div>
                 <CardSection >
                 {
-                datos.map(({id,talles,imagen,title,price,alt,descuentos,nuevo}) =>
+                datos.map((e) =>
                     <Card
-                    key={id}
-                    talles={talles}
-                    img ={imagen}
-                    titulo = {title}
-                    precio = {price}
-                    descripcion= {alt}
-                    descuentos={descuentos}
-                    nuevo={nuevo}
+                    key={e.id}
+                    talles={e.talles}
+                    img ={e.imagen}
+                    titulo = {e.title}
+                    precio = {e.price}
+                    descripcion= {e.alt}
+                    descuentos={e.descuentos}
+                    nuevo={e.nuevo}
                     cartel={props.showcartel}
                     />
                     )
@@ -94,17 +74,10 @@ const CardSection = styled.section `
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 100px ;
+    padding-bottom: 20px;
+    padding-top: 20px;
     @media (max-width: 768px) {
         gap: 15px;
     }
-`;
-const TextoTitulo = styled.h1 `
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    display: flex;
-    justify-content: start;
-    margin: 75px 0 30px 0px;
 `;
 export default Cards;

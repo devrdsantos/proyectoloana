@@ -1,163 +1,119 @@
+import { useRef } from "react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {ReactComponent as FlechaIzquierda} from './../assets/iconmonstr-angel-left-thin.svg';
 import {ReactComponent as FlechaDerecha} from './../assets/iconmonstr-angel-right-thin.svg';
 
 const Card = (props) => {
+    const slideShow = useRef(null)
     const nextImg = () => {
-        console.log("siguiente imagen");
+        if (slideShow.current.children.length > 0){
+            const primerElemento = slideShow.current.children[0];
+			slideShow.current.style.transition = `2000ms ease-out all`;
+			const tamañoSlide = slideShow.current.children[0].offsetWidth;
+			slideShow.current.style.transform = `translateX(-${tamañoSlide}px)`;
+			const transicion = () => {
+				slideShow.current.style.transition = 'none';
+				slideShow.current.style.transform = `translateX(0)`;
+				slideShow.current.appendChild(primerElemento);
+				slideShow.current.removeEventListener('transitionend', transicion);
+			}
+			slideShow.current.addEventListener('transitionend', transicion);
+		}
     }
     const previusImg = () => {
-        console.log("anterior imagen");
-    }
+        if(slideShow.current.children.length > 0){
+            const index = slideShow.current.children.length -1;
+            const ultimoElemento = slideShow.current.children[index];
+            slideShow.current.insertBefore(ultimoElemento, slideShow.current.firstChild);
+            slideShow.current.style.transition = 'none';
+            const tamañoSlide = slideShow.current.children[0].offsetWidth;
+            slideShow.current.style.transform = `translateX(-${tamañoSlide}px)`;
+                setTimeout(() => {
+                    slideShow.current.style.transition = `2000ms ease-out all`;
+                    slideShow.current.style.transform = `translateX(0)`;
+                }, 30);
+		    }
+        }
+    
     return (
-        <CardsHome color={props.descuentos === 0 || props.descuentos === undefined ? "red" : "#FFCE51;"} >
-            {(props.cartel===props.nuevo || props.cartel=== undefined)
-            ?<span>{props.descuentos === 0 || props.descuentos === undefined ? "NEW" 
-            :`-${props.descuentos}%`}</span>:null}
-            <ul>
-                {props.talles.map((talle , index)=>
-                    <li key={index}>{talle}</li>
-                )}
-            </ul>
-            <button className="heart-icon"><FontAwesomeIcon icon={faHeart}/></button>
-            <div className="contenedor-imagen">
-                <img src={props.img} alt={props.descripcion} />
-                <Controles className="hidenbutton">
-                    <Boton onClick={previusImg}>
-                        <FlechaIzquierda />
-                    </Boton>
-                    <Boton onClick={nextImg} derecho>
-                        <FlechaDerecha />
-                    </Boton>
-                </Controles>
-            </div>
-            <h1>{props.titulo}</h1>
+        <ContenedorPrincipal>
+            <ContenedorCard>
+                <ContenedorSlideShow ref={slideShow}>
+                    {
+                        props.img.map((imagen,index) =>
+                            <Slide key={index}>
+                                <img src={imagen} alt={props.descripcion} />
+                            </Slide> 
+                        )
+                    }
+                </ContenedorSlideShow>
+                    <Controles>
+                        <Boton onClick={previusImg}>
+                        <svg width="12" height="20" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2L3 7L8 12L7 14L0 7L7 0L8 2Z" fill="white"/>
+                        </svg>
+
+                        </Boton>
+                        <Boton onClick={nextImg} derecho>
+                            <svg width="12" height="20" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.51683e-07 12L5 7L1.52591e-06 2L1 -6.11959e-07L8 7L1 14L6.51683e-07 12Z" fill="white"/>
+                            </svg>
+                        </Boton>
+                    </Controles>
+            </ContenedorCard>
+            <TituloCard>{props.titulo}</TituloCard>
             <p>${props.precio}</p>
-        </CardsHome>
+            <Contenedorboton className="button-hover">
+                <BotonInformacion>VER MÁS</BotonInformacion>
+            </Contenedorboton>
+        </ContenedorPrincipal>
     )
 }
-const CardsHome = styled.div `
-    width: 258px;
-    height: 450px;
-    min-width: 258px;
-    margin: 20px 20px 0 20px;
+const ContenedorPrincipal = styled.div`
     position: relative;
-    & ul{ 
-        display: none;
-        align-items: center;
-        position: absolute;
-        top: 281px;
-        width: 100%;
-        height: 50px;
-        background-color: #5654;
-        margin: 0;
-        padding: 0;
-        }
-        ul li{
-            padding: 4px 8px 4px 8px ;
-            margin-left: 12px;
-            background-color: white;
-            display: inline-block;
-        }
-    & span{
-        ${props=>(props.color) ?`background-color:${props.color}`: null };
-        position: absolute;
-        color: white;
-        padding: 5px 10px;
-    }
-    .heart-icon{
-        position:absolute;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color: #E2E2E2;
-        top : 8px;
-        left: 219px;
-        width: 30px;
-        height: 30px; 
-        border: 0px;
-    }
-    .heart-icon svg {
-            width: 17.5px;
-            height: 17.5px;
-            padding: 0;
-            margin: 0;
-            color: rgba(0, 0, 0, 0.4);
-    }
-    .contenedor-imagen{
-        width: 100%;
-        height: 331px;
-        
-    }
-    & img {
-        width: 100%;
-        height :100%;
-    }
-    & h1, p {
+    overflow: hidden;
+    width: 320px;
+    height: 329px;
+    min-width: 320px;
+    p{
         text-align: center;
     }
-    & p , span, h1{
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-    }
-    .hidenbutton{
-        visibility: hidden;
-    }
     &:hover{
-        .hidenbutton {
-            visibility: visible;
-        }
-        ul{
+        .button-hover{
             display: flex;
         }
     }
-    @media (max-width: 768px) {
-    height: 180px;
-    width: 100vw;
-    min-width: 108px;
-    max-width: 110px;
-    .contenedor-imagen{
+`;
+const ContenedorCard = styled.div`
+    position: relative;
+    width: 320px;
+    height: 223px;
+    h1 , p {
+        font-size: 16px;
+        text-align: center;
+    }
+`;
+const ContenedorSlideShow = styled.div`
+    display: flex;
+    flex-wrap: nowrap;
+`;
+const Slide = styled.div`
+    overflow: hidden;
+    min-width: 100%;
+    transition: .3s ease all;
+    max-height: 223px;
+    position: relative;
+    & img{
         width: 100%;
-        height: 108px;
+        height: 100%;
+        vertical-align: top;
     }
-    span{
-        display: none;
-    }
-    & button{
-        display: none;
-    }
-    img{
-        width: 100%;
-        height: 108px;
-        border-radius: 15px;
-    }
-    h1, p{
-        font-size: 12px;
-    } 
-    p{  display: flex;
-        justify-content: center;
-        width: 50%;
-        background-color: gray;
-
-    }
-    ul , .heart-icon{
-        display: none;
-    }
-    &:hover{
-        ul{
-            display: none;
-        }
-    }
-  }
 `;
 const Controles = styled.div`
     position: absolute;
-    top: 31px;
+    top: 0;
     width: 100%;
-    height: 269px;
+    height: 100%;
     pointer-events: none;  
 `;
 const Boton = styled.button`
@@ -167,12 +123,35 @@ const Boton = styled.button`
     border: none;
     cursor: pointer;
     outline: none;
-    width: 50px;
+    width: 25px;
     height: 100%;
-    text-align: center;
     & svg {
-        color: rgba(0, 0, 0, 0.4);
+        color: rgba(255,255,255);
     }
     ${props=>(props.derecho)?"right: 0":"left:0"}
 `;
+const Contenedorboton = styled.div`
+    display: none;
+    align-items: center;
+    justify-content: center;
+`;
+const TituloCard = styled.h1`
+    text-align: center;
+    font-size: 16px;
+`;
+const BotonInformacion = styled.button`
+    margin: 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1B1B1B;
+    color: rgba(255,255,255,1);
+    padding: 0;
+    &:hover{
+        background-color:rgba(255,255,255,1);
+        color: #1B1B1B;
+    }
+`;
+
 export default Card;
+
