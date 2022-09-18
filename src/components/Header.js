@@ -63,23 +63,23 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="search-container">
-            <form
-              action="https://www.google.com/search"
-              method="get"
-              className="search-form-desktop"
-            >
-              <input
-                type="text"
-                className="input-search-desktop"
-                placeholder="Buscar"
-              />
-              <button type="submit" className="search-button-desktop">
-                <img src={searchIcon} alt="icono de busqueda" />
-              </button>
-            </form>
-          </div>
           <div className="nav-buttons-desktop">
+            <div className="search-container">
+              <form
+                action="https://www.google.com/search"
+                method="get"
+                className="search-form-desktop"
+              >
+                <input
+                  type="text"
+                  className="input-search-desktop"
+                  placeholder="Buscar"
+                />
+                <button type="submit" className="search-button-desktop">
+                  <img src={searchIcon} alt="icono de busqueda" />
+                </button>
+              </form>
+            </div>
             <button className="profile-button-desktop">
               <Link to="/user">
                 <img src={userVector} alt="logo del user" />
