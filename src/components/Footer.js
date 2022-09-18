@@ -29,21 +29,21 @@ function Footer() {
             </div>
             <div className="mb-2">
               <button className="button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Sobre nosotros
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   FAQ
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Ayuda
                 </Link>
               </button>
@@ -88,7 +88,7 @@ function Footer() {
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer padding-seguinos text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Facebook
                 </Link>
               </button>
@@ -96,7 +96,7 @@ function Footer() {
             <div className="mb-2"></div>
             <div className="mb-2">
               <button className=" padding-seguinos button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Instagram
                 </Link>
               </button>

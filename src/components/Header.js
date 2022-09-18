@@ -37,8 +37,8 @@ function Header() {
           <div className="nav-desktop">
             <ul className="ul-nav-desktop">
               <li className="li-nav-desktop">
-                <Link to="/jeans" className="link-style">
-                  JEANS
+                <Link to="/pantalones" className="link-style">
+                  PANTALONES
                 </Link>
               </li>
               <li className="li-nav-desktop">
