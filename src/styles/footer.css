@@ -65,9 +65,14 @@
 }
 
 .font-size-footer-logo-direction-number {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
+  margin-top: 5px;
+}
+
+.margin-bottom-footer {
+  margin-bottom: 32px;
 }
 
 .copyright-footer-mobile {

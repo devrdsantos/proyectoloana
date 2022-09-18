@@ -24,7 +24,7 @@ function Footer() {
                 MÁS INFORMACIÓN
               </p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-masinformacion"></div>
             </div>
             <div className="mb-2">
@@ -36,7 +36,7 @@ function Footer() {
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/faq">
                   FAQ
                 </Link>
               </button>
@@ -54,7 +54,7 @@ function Footer() {
             <div className="div-p-footer-contacto mb-3">
               <p className="h5 text-white">CONTACTO</p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-contacto"></div>
             </div>
             <div className="d-flex mb-2 text-secondary">
@@ -83,7 +83,7 @@ function Footer() {
             <div className="div-p-footer-seguinos mb-3 padding-seguinos">
               <p className="h5 text-white ">SEGUINOS</p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-seguinos"></div>
             </div>
             <div className="mb-2">

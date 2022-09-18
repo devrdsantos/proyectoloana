@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   const slideShow = useRef(null);
@@ -42,7 +43,9 @@ const Card = (props) => {
         <ContenedorSlideShow ref={slideShow}>
           {props.img.map((imagen, index) => (
             <Slide key={index}>
-              <img src={imagen} alt={props.descripcion} />
+              <Link to="/item">
+                <img src={imagen} alt={props.descripcion} />
+              </Link>
             </Slide>
           ))}
         </ContenedorSlideShow>
@@ -77,7 +80,9 @@ const Card = (props) => {
       <TituloCard>{props.titulo}</TituloCard>
       <p>${props.precio}</p>
       <Contenedorboton className="button-hover">
-        <BotonInformacion>VER MÁS</BotonInformacion>
+        <Link to="/item">
+          <BotonInformacion>VER MÁS</BotonInformacion>
+        </Link>
       </Contenedorboton>
     </ContenedorPrincipal>
   );
@@ -92,6 +97,7 @@ const ContenedorPrincipal = styled.div`
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
+    font-family: "Outfit";
   }
   &:hover {
     .button-hover {
