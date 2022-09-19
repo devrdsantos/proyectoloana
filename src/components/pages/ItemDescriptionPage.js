@@ -2,11 +2,14 @@ import styled from "styled-components";
 import modelo1 from "../../assets/img_cards/modelo1.png";
 import modelo2 from "../../assets/img_cards/modelo2.png";
 import modelo3 from "../../assets/img_cards/modelo3.png";
-import blackstars from "../../assets/img__vectores/blackstars.png";
+import blackstars from "../../assets/img__vectores/blackstars.png"
 import Accordion from "react-bootstrap/Accordion";
-
+import Cards from "../Cards"
+import DataHome from "../data/DataHome";
 function ItemDescriptionPage() {
   return (
+    <ContainerPage>
+      <h4>HOME/PANTALONES/<strong>JEAN OCHENTOSO</strong></h4>
     <ContainerItemDescription>
       <ImagenesChicas>
         <div>
@@ -54,7 +57,7 @@ function ItemDescriptionPage() {
             <button>44</button>
           </div>
         </Talles>
-        <div className="cantidad">
+        <Cantidad>
           <p>CANTIDAD</p>
           <BotonCantidad>
             <button>
@@ -83,7 +86,7 @@ function ItemDescriptionPage() {
               </svg>
             </button>
           </BotonCantidad>
-        </div>
+        </Cantidad>
         <AñadirAlCarrito>
           <button>AÑADIR AL CARRITO</button>
         </AñadirAlCarrito>
@@ -101,12 +104,29 @@ function ItemDescriptionPage() {
         </div>
       </div>
     </ContainerItemDescription>
+    <TambienTePodria>
+      <h1>TAMBIEN TE PODRÍA INTERESAR</h1>
+      <DivPosition />
+    </TambienTePodria>
+      <Cards data={DataHome} />
+    </ContainerPage>
   );
 }
 
+const ContainerPage = styled.div`
+margin-left: 1.6rem;
+  h4{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Outfit';
+    padding-left: 2rem;
+  }
+`;
 const ContainerItemDescription = styled.div`
   display: flex;
   width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
 
 const ImagenesChicas = styled.div`
@@ -126,8 +146,8 @@ const ImagenesChicas = styled.div`
 
 const ContainerImgDescription = styled.div`
   img {
-    width: 452px;
-    height: 500px;
+    width: 712px;
+    height: 752px;
     margin-bottom: 3rem;
     margin-right: 4rem;
   }
@@ -135,7 +155,7 @@ const ContainerImgDescription = styled.div`
 
 const Estrellas = styled.div`
   display: flex;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1rem 0;
 
   img {
     width: 24px;
@@ -172,7 +192,7 @@ const Colores = styled.div`
     font-size: 16px;
     font-weight: 400;
     font-family: "Outfit";
-    margin: 0 0 0.3rem 0;
+    margin: 0 0 0.6rem 0;
   }
 
   button {
@@ -191,7 +211,7 @@ const Talles = styled.div`
     margin-right: 0.5rem;
     border: solid 1px black;
     background-color: transparent;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &:hover {
       background-color: #c1c1c1;
     }
@@ -200,7 +220,7 @@ const Talles = styled.div`
 
 const TallesText = styled.div`
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom:1rem;
 
   h5 {
     margin: 0;
@@ -217,13 +237,15 @@ const TallesText = styled.div`
     font-weight: 300;
   }
 `;
+const Cantidad = styled.div`
+  margin-bottom: 1.5rem;
+`;
 
 const BotonCantidad = styled.div`
   display: flex;
   width: 140px;
   height: 32px;
   border: solid 1px black;
-
   button {
     border: none;
     background-color: #c1c1c135;
@@ -241,7 +263,7 @@ const BotonCantidad = styled.div`
 const AñadirAlCarrito = styled.div`
   width: 216px;
   height: 40px;
-
+  margin-bottom: 2rem;
   button {
     width: 216px;
     height: 40px;
@@ -252,6 +274,24 @@ const AñadirAlCarrito = styled.div`
     border: none;
     border-radius: 5px;
   }
+`;
+const TambienTePodria = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  h1 {
+    font-size: 28px;
+    font-family: "Outfit";
+  }
+`;
+const DivPosition = styled.div`
+  position: absolute;
+  background: rgba(255, 122, 0, 0.4);
+  width: 458px;
+  height: 16px;
+  bottom: 10px;
 `;
 
 export default ItemDescriptionPage;
