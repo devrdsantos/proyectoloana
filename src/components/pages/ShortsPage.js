@@ -1,6 +1,8 @@
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
-
+import Cards from "../Cards"
+import DataShorts from "../data/DataShorts"
+import OrderBy from "../OrderBy";
 const ShortsPage = () => {
   return (
     <>
@@ -9,6 +11,8 @@ const ShortsPage = () => {
           ImgPantalones={ImagePantalones}
           h1PageSection={"SHORTS"}
         />
+        <OrderBy />
+        <Cards data = {DataShorts} />
       </div>
     </>
   );
