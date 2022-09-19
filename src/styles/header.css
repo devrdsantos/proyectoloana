@@ -166,10 +166,7 @@
     padding: 1rem 1rem 1rem 1rem;
   }
 
-  @media (max-width: 1280px) {
-    .li-nav-desktop {
-      font-size: 12px;
-    }
+
 
     .img-logo-header-desktop {
       width: 220px;
@@ -194,6 +191,12 @@
     font-size: 16px;
     padding: 1rem 1rem 1rem 1rem;
   }
+
+  @media (max-width: 1280px) {
+    .li-nav-desktop {
+      font-size: 12px;
+      padding: 1rem .5rem 1rem .5rem;
+    }
 
   .img-logo-header-desktop {
     width: 250px;
