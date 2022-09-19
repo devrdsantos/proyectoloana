@@ -119,7 +119,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .profile-button-desktop {
@@ -163,7 +163,7 @@
 @media (max-width: 1200px) {
   .li-nav-desktop {
     font-size: 12px;
-    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding: ;
   }
 
   .img-logo-header-desktop {
