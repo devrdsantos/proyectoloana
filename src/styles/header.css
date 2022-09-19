@@ -160,6 +160,21 @@
   width: 166px;
 }
 
+@media (max-width: 1200px) {
+  .li-nav-desktop {
+    font-size: 12px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+
+  .img-logo-header-desktop {
+    width: 220px;
+  }
+
+  .search-container {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 1366px) {
   .li-nav-desktop {
     font-size: 16px;
