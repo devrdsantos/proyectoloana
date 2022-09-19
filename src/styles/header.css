@@ -175,6 +175,21 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .li-nav-desktop {
+    font-size: 16px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .img-logo-header-desktop {
+    width: 250px;
+  }
+
+  .search-container {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 1366px) {
   .li-nav-desktop {
     font-size: 16px;

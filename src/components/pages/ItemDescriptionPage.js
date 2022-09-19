@@ -312,12 +312,14 @@ const TambienTePodria = styled.div`
   align-items: center;
   position: relative;
   margin-bottom: 2rem;
+
   @media (max-width: 1366px) {
     margin-bottom: 1.5rem;
   }
   h1 {
     font-size: 28px;
     font-family: "Outfit";
+    z-index: 1;
   }
 `;
 const DivPosition = styled.div`
@@ -326,6 +328,7 @@ const DivPosition = styled.div`
   width: 458px;
   height: 16px;
   bottom: 10px;
+  z-index: 2;
 `;
 
 export default ItemDescriptionPage;
