@@ -1,6 +1,9 @@
 import React from "react";
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
+import Cards from "../Cards";
+import DataNovedades from "../data/DataNovedades";
+import OrderBy from "../OrderBy";
 
 function NovedadesPage() {
   return (
@@ -9,6 +12,8 @@ function NovedadesPage() {
         ImgPantalones={ImagePantalones}
         h1PageSection={"NOVEDADES"}
       />
+      <OrderBy />
+      <Cards data={DataNovedades} />
     </div>
   );
 }

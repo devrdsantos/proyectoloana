@@ -1,7 +1,7 @@
-import img1 from "../assets/img_cards/modelo1.png";
-import img2 from "../assets/img_cards/modelo2.png";
-import img3 from "../assets/img_cards/modelo3.png";
-import img4 from "../assets/img_cards/modelo4.png";
+import img1 from "../../assets/img_cards/modelo1.png";
+import img2 from "../../assets/img_cards/modelo2.png";
+import img3 from "../../assets/img_cards/modelo3.png";
+import img4 from "../../assets/img_cards/modelo4.png";
 
 const DataHome = [
   {
@@ -42,7 +42,7 @@ const DataHome = [
     price: 2500,
     talles: [38, 40, 42],
     nuevo: true,
-  },
+  }
 ];
 
 export default DataHome;
