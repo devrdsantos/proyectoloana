@@ -83,6 +83,11 @@
   color: #e2e2e2;
 }
 
+.border-bottom-mobile-footer {
+  border-bottom: solid 2px white;
+  padding-bottom: 0.5rem;
+}
+
 @media (max-width: 500px) {
   .footer-desktop {
     display: none;
