@@ -37,6 +37,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-top: 5px;
+  padding-left: 1rem;
 }
 
 .li-nav-desktop {
@@ -52,6 +53,7 @@
 .orange-color-ofertas {
   color: #ff7a00;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .orange-color-ofertas:hover {
@@ -158,15 +160,30 @@
   width: 166px;
 }
 
+@media (max-width: 1366px) {
+  .li-nav-desktop {
+    font-size: 16px;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .img-logo-header-desktop {
+    width: 250px;
+  }
+
+  .search-container {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 800px) {
   .img-logo-header-desktop {
-    width: 300px;
+    width: 250px;
   }
 }
 
 @media (max-width: 600px) {
   .img-logo-header-desktop {
-    width: 250px;
+    width: 200px;
   }
 }
 

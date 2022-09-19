@@ -7,18 +7,20 @@ function WhyLoanaNoDesc() {
   return (
     <ContainerWhyLoanaNoDesc>
       <h1> ¿POR QUÉ LOANA JEANS?</h1>
-      <ArgenMap>
-        <img src={argenMap} alt="" />
-        <h2>MADE IN ARGENTINA</h2>
-      </ArgenMap>
-      <ProduccionResponsable>
-        <img src={produccionResponsable} alt="" />
-        <h2>PRODUCCIÓN RESPONSABLE</h2>
-      </ProduccionResponsable>
-      <OrgAmbientalistas>
-        <img src={orgAmbientalistas} alt="" />
-        <h2>COLABORAMOS CON ORGANIZACIONES AMBIENTALISTAS</h2>
-      </OrgAmbientalistas>
+      <div className="d-flex">
+        <ArgenMap>
+          <img src={argenMap} alt="" />
+          <h2>MADE IN ARGENTINA</h2>
+        </ArgenMap>
+        <ProduccionResponsable>
+          <img src={produccionResponsable} alt="" />
+          <h2>PRODUCCIÓN RESPONSABLE</h2>
+        </ProduccionResponsable>
+        <OrgAmbientalistas>
+          <img src={orgAmbientalistas} alt="" />
+          <h2>COLABORAMOS CON ORGANIZACIONES AMBIENTALISTAS</h2>
+        </OrgAmbientalistas>
+      </div>
     </ContainerWhyLoanaNoDesc>
   );
 }
