@@ -1,7 +1,10 @@
 import React from "react";
+import Faq from "../Faq";
 
 function JeansPage() {
-  return <h1>Jeans</h1>;
+  return (
+    <Faq/>
+  );
 }
 
 export default JeansPage;

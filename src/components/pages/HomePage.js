@@ -4,6 +4,7 @@ import Cards from "../Cards.js";
 import Whyloana from "../Whyloana.js";
 import Mainofertasynovedades from "../Mainofertasynovedades.js";
 
+
 function HomePage() {
   return (
     <main>
