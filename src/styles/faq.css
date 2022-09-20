@@ -18,9 +18,6 @@
     user-select: none;
   }
   
-  /* html {
-  } */
-  
   .main {
     display: inline-block;
     position: relative;
@@ -34,10 +31,13 @@
     font-family: "Outfit", sans-serif;
     font-weight: 500;
     background-color: #fefffa;
-    border:2px solid #ff7a00;
+    border-bottom:2px solid #ff7a00;
+    border-left:2px solid #ff7a00;
+    border-right:2px solid #ff7a00;
     transform: translate(-50%, 0);
     box-shadow: 0 10px 0 0 #ffe661 inset;
   }
+
   @media (max-width: 550px) {
     .main {
       box-sizing: border-box;

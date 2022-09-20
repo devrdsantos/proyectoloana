@@ -10,7 +10,7 @@ import CamperasPage from "./components/pages/CamperasPage";
 import HomePage from "./components/pages/HomePage";
 import EnterProfile from "./components/pages/EnterProfile";
 import NovedadesPage from "./components/pages/NovedadesPage";
-import FaqPage from "./components/pages/FaqPage";
+import Faq from "./components/pages/Faq";
 import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
 
 function App() {
@@ -23,15 +23,7 @@ function App() {
           <Route path="/pantalones" element={<PantalonesPage />} />
           <Route path="/shorts" element={<ShortsPage />} />
           <Route path="/camperas" element={<CamperasPage />} />
-<<<<<<< HEAD
           <Route path="/ofertas" element={<OfertasPage />} />          
-=======
-          <Route path="/ofertas" element={<OfertasPage />} />
-          <Route path="/novedades" element={<NovedadesPage />} />
-          <Route path="/user" element={<EnterProfile />} />
-          <Route path="/faq" element={<FaqPage />} />
-          <Route path="/item" element={<ItemDescriptionPage />} />
->>>>>>> daniel
         </Routes>
         <Footer />
       </Router>
