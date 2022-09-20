@@ -33,7 +33,7 @@
     left: 50%;
     margin: 90px 0;
     transform: translate(-50%, 0);
-    box-shadow: 0 10px 0 0 #ff6873 inset;
+    box-shadow: 0 10px 0 0 #6b75e3 inset;
     background-color: #fefffa;
     max-width: 450px;
     padding: 30px;
@@ -50,7 +50,7 @@
   }
   
   .main_h1, .main-h2 {
-    color: #ff6873;
+    color: #6b75e3;
   }
   
   .main_h1 {
@@ -121,7 +121,7 @@
   .main_ul .main-ul_li i:before, .main_ul .main-ul_li i:after {
     content: "";
     position: absolute;
-    background-color: #ff6873;
+    background-color: #6b75e3;
     width: 3px;
     height: 9px;
   }
