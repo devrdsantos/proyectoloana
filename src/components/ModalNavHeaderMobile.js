@@ -40,10 +40,10 @@ const ModalNavHeaderMobile = ({ estado, cambiarEstado }) => {
                 <li>
                   <Link
                     onClick={() => cambiarEstado(false)}
-                    to="/jeans"
+                    to="/pantalones"
                     className="link-style"
                   >
-                    JEANS
+                    PANTALONES
                   </Link>
                 </li>
                 <li>

@@ -37,8 +37,8 @@ function Header() {
           <div className="nav-desktop">
             <ul className="ul-nav-desktop">
               <li className="li-nav-desktop">
-                <Link to="/jeans" className="link-style">
-                  JEANS
+                <Link to="/pantalones" className="link-style">
+                  PANTALONES
                 </Link>
               </li>
               <li className="li-nav-desktop">
@@ -63,28 +63,32 @@ function Header() {
               </li>
             </ul>
           </div>
-          <div className="search-container">
-            <form
-              action="https://www.google.com/search"
-              method="get"
-              className="search-form-desktop"
-            >
-              <input
-                type="text"
-                className="input-search-desktop"
-                placeholder="Buscar"
-              />
-              <button type="submit" className="search-button-desktop">
-                <img src={searchIcon} alt="icono de busqueda" />
-              </button>
-            </form>
-          </div>
           <div className="nav-buttons-desktop">
+            <div className="search-container">
+              <form
+                action="https://www.google.com/search"
+                method="get"
+                className="search-form-desktop"
+              >
+                <input
+                  type="text"
+                  className="input-search-desktop"
+                  placeholder="Buscar"
+                />
+                <button type="submit" className="search-button-desktop">
+                  <img src={searchIcon} alt="icono de busqueda" />
+                </button>
+              </form>
+            </div>
             <button className="profile-button-desktop">
-              <img src={userVector} alt="logo del user" />
+              <Link to="/user">
+                <img src={userVector} alt="logo del user" />
+              </Link>
             </button>
             <button className="compras-button-desktop">
-              <img src={infoVector} alt="icono de ayuda" />
+              <Link to="/faq">
+                <img src={infoVector} alt="icono de ayuda" />
+              </Link>
             </button>
             <button className="compras-button-desktop pe-5">
               <img src={bagVector} alt="icono de la bolsa de compras" />

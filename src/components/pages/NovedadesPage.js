@@ -2,19 +2,20 @@ import React from "react";
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
 import Cards from "../Cards";
-import DataCamperas from "../data/DataCamperas";
+import DataNovedades from "../data/DataNovedades";
 import OrderBy from "../OrderBy";
-function CamperasPage() {
+
+function NovedadesPage() {
   return (
     <div>
       <PageSectionImage
         ImgPantalones={ImagePantalones}
-        h1PageSection={"CAMPERAS"}
+        h1PageSection={"NOVEDADES"}
       />
       <OrderBy />
-      <Cards data={DataCamperas} />
+      <Cards data={DataNovedades} />
     </div>
   );
 }
 
-export default CamperasPage;
+export default NovedadesPage;

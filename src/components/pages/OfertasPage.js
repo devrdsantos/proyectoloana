@@ -1,13 +1,18 @@
 import React from "react";
-import SizeFilter from "../SizeFilter";
-
+import PageSectionImage from "../PageSectionImage";
+import ImagePantalones from "../../assets/img-pantalones.png";
+import DataOfertas from "../../components/data/DataOfertas"
+import Cards from "../Cards";
+import OrderBy from "../OrderBy";
 function OfertasPage() {
   return (
     <div>
-      <h1>Ofertas</h1>
-      <div>
-        <SizeFilter />
-      </div>
+      <PageSectionImage
+        ImgPantalones={ImagePantalones}
+        h1PageSection={"OFERTAS"}
+      />
+      <OrderBy />
+      <Cards data={DataOfertas} />
     </div>
   );
 }

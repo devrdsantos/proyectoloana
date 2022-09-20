@@ -24,26 +24,26 @@ function Footer() {
                 MÁS INFORMACIÓN
               </p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-masinformacion"></div>
             </div>
             <div className="mb-2">
               <button className="button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Sobre nosotros
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   FAQ
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Ayuda
                 </Link>
               </button>
@@ -54,7 +54,7 @@ function Footer() {
             <div className="div-p-footer-contacto mb-3">
               <p className="h5 text-white">CONTACTO</p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-contacto"></div>
             </div>
             <div className="d-flex mb-2 text-secondary">
@@ -83,12 +83,12 @@ function Footer() {
             <div className="div-p-footer-seguinos mb-3 padding-seguinos">
               <p className="h5 text-white ">SEGUINOS</p>
             </div>
-            <div className="position-relative mb-4">
+            <div className="position-relative margin-bottom-footer">
               <div className="border-bottom-seguinos"></div>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer padding-seguinos text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Facebook
                 </Link>
               </button>
@@ -96,7 +96,7 @@ function Footer() {
             <div className="mb-2"></div>
             <div className="mb-2">
               <button className=" padding-seguinos button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/jeans">
+                <Link className=" link-footer-color" to="/pantalones">
                   Instagram
                 </Link>
               </button>
@@ -114,6 +114,7 @@ function Footer() {
       <div className="container-fluid bg-black footer-mobile">
 
         <div className="d-flex justify-content-between">
+<<<<<<< HEAD
             
           <div className="d-flex flex-column color-footer-mobile m-3 p-1 " >
             <p className="border-bottom border-white ">Contacto</p>
@@ -122,6 +123,15 @@ function Footer() {
           </div>
           <div className="d-flex flex-column color-footer-mobile m-3 p-1 " >
             <p className="border-bottom border-white">Seguinos</p>
+=======
+          <div className="d-flex flex-column color-footer-mobile">
+            <p className="border-bottom-mobile-footer">Contacto</p>
+            <p>Av. San Martín 1587, CABA, Buenos Aires</p>
+            <p>(+54) 9 11-5674-1599</p>
+          </div>
+          <div className="d-flex flex-column color-footer-mobile">
+            <p className="border-bottom-mobile-footer">Seguinos</p>
+>>>>>>> daniel
             <div className="d-flex flex-column">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/">

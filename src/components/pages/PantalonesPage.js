@@ -1,21 +1,22 @@
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
-import Cards from "../Cards"
-import DataShorts from "../data/DataShorts"
 import OrderBy from "../OrderBy";
-const ShortsPage = () => {
+import Cards from "../Cards";
+import DataPantalon from "../data/DataPantalon";
+
+function PantalonesPage() {
   return (
-    <>
+    <div>
       <div>
         <PageSectionImage
           ImgPantalones={ImagePantalones}
-          h1PageSection={"SHORTS"}
+          h1PageSection={"PANTALONES"}
         />
         <OrderBy />
-        <Cards data = {DataShorts} />
       </div>
-    </>
+      <Cards data={DataPantalon} />
+    </div>
   );
-};
+}
 
-export default ShortsPage;
+export default PantalonesPage;

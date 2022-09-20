@@ -11,15 +11,20 @@ function Whyloana() {
       <div className="container-item-whyloana">
         <div className="div-item-whyloana madeinargentina">
           <img
-            className="img-item-whyloana1 mb-3 mt-4 "
+            className="img-item-whyloana1 mb-4 "
             src={argenMap}
             alt="icono de mapa de argentina"
           />
-          <h3 className="h3-items-whyloana"> MADE IN ARGENTINA</h3>
-          <p className="p-whyloana">
-            Estamos orgullosos de ser una empresa nacional que le da trabajo a
-            más de 20 familias argentinas.
-          </p>
+          <div className="div-container-h3-p-whyloana">
+            <h3 className="h3-items-whyloana h3-items-whyloana1">
+              {" "}
+              MADE IN ARGENTINA
+            </h3>
+            <p className="p-whyloana">
+              Estamos orgullosos de ser una empresa nacional que le da trabajo a
+              más de 20 familias argentinas.
+            </p>
+          </div>
         </div>
         <div className="div-item-whyloana produccionresponsable">
           <img
@@ -27,26 +32,32 @@ function Whyloana() {
             src={produccionResponsable}
             alt="icono de produccion"
           />
-          <h3 className="h3-items-whyloana">PRODUCCION RESPONSABLE</h3>
-          <p className="p-whyloana">
-            Para la confección de nuestras prendas trabajamos con materiales
-            biodegradables.{" "}
-          </p>
+          <div className="div-container-h3-p-whyloana">
+            <h3 className="h3-items-whyloana h3-items-whyloana2">
+              PRODUCCION RESPONSABLE
+            </h3>
+            <p className="p-whyloana">
+              Para la confección de nuestras prendas trabajamos con materiales
+              biodegradables.{" "}
+            </p>
+          </div>
         </div>
         <div className="div-item-whyloana colaboracionambientalista">
           <img
-            className="img-item-whyloana3 mb-2 mt-5"
+            className="img-item-whyloana3 mb-3"
             src={orgAmbientalistas}
             alt="icono org ambientalistas"
           />
-          <h3 className="h3-items-whyloana">
-            COLABORAMOS CON ORGANIZACIONES AMBIENTALISTAS
-          </h3>
-          <p className="p-whyloana">
-            Cada fin de mes el 5% de nuestras ventas va destinado a
-            organizaciones ambientalistas que ayudan a restaurar nuestros
-            bosques.{" "}
-          </p>
+          <div className="div-container-h3-p-whyloana3">
+            <h3 className="h3-items-whyloana h3-items-whyloana3">
+              COLABORAMOS CON ORGANIZACIONES AMBIENTALISTAS
+            </h3>
+            <p className="p-whyloana">
+              Cada fin de mes el 5% de nuestras ventas va destinado a
+              organizaciones ambientalistas que ayudan a restaurar nuestros
+              bosques.{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>
