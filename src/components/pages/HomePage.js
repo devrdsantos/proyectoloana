@@ -4,7 +4,7 @@ import Cards from "../Cards.js";
 import Whyloana from "../Whyloana.js";
 import Mainofertasynovedades from "../Mainofertasynovedades.js";
 import styled from "styled-components";
-import DataHome from "../../components/data/DataHome";
+import {DataHome} from "../../components/data/DataAll";
 
 function HomePage() {
   return (

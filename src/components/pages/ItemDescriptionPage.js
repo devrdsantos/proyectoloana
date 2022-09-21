@@ -2,11 +2,15 @@ import styled from "styled-components";
 import modelo1 from "../../assets/img_cards/modelo1.png";
 import modelo2 from "../../assets/img_cards/modelo2.png";
 import modelo3 from "../../assets/img_cards/modelo3.png";
-import blackstars from "../../assets/img__vectores/blackstars.png"
+import blackstars from "../../assets/img__vectores/blackstars.png";
 import Accordion from "react-bootstrap/Accordion";
-import Cards from "../Cards"
-import DataHome from "../data/DataHome";
+import Cards from "../Cards";
+import {DataHome} from "../data/DataAll";
+import React,{useState} from "react";
 function ItemDescriptionPage() {
+  const [count ,setCount] = useState(0)
+  const suma = () => setCount(count + 1);
+  const resta = () =>count !== 0 ? setCount(count - 1):console.log("error"); 
   return (
     <ContainerPage>
       <h4>HOME/PANTALONES/<strong>JEAN OCHENTOSO</strong></h4>
@@ -60,7 +64,7 @@ function ItemDescriptionPage() {
         <Cantidad>
           <p>CANTIDAD</p>
           <BotonCantidad>
-            <button>
+            <button onClick={resta}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -72,8 +76,8 @@ function ItemDescriptionPage() {
                 <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
               </svg>
             </button>
-            <p>1</p>
-            <button>
+            <p>{count}</p>
+            <button onClick={suma}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"

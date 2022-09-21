@@ -2,7 +2,7 @@ import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
 import OrderBy from "../OrderBy";
 import Cards from "../Cards";
-import DataPantalon from "../data/DataPantalon";
+import {DataPantalon} from "../data/DataAll";
 
 function PantalonesPage() {
   return (

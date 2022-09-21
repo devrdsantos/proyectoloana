@@ -17,9 +17,10 @@ function Cards(props) {
           cartel={props.showcartel}
         />
       ))}
-    </CardSection>
-  );
-}
+      </CardSection>
+    );
+  }
+
 const CardSection = styled.section`
   display: flex;
   flex-wrap: wrap;
