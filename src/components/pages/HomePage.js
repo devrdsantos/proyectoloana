@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import CarouselMain from "../CarouselMain.js";
 import Cards from "../Cards.js";
 import Whyloana from "../Whyloana.js";
 import Mainofertasynovedades from "../Mainofertasynovedades.js";
 import styled from "styled-components";
-import {DataHome} from "../../components/data/DataAll";
-
+import { DataContext } from "../data/DataProvider.js";
 function HomePage() {
+  const value = useContext(DataContext)
+  const [productos] = value.productos;
+  const filtrado = productos.filter(e=>e.id<5);
   return (
     <main>
       <CarouselMain />
@@ -16,7 +18,7 @@ function HomePage() {
         <h1>LO MÁS VENDIDO</h1>
         <DivPosition />
       </LoMasVendido>
-      <Cards data={DataHome} />
+      <Cards data={filtrado} />
     </main>
   );
 }

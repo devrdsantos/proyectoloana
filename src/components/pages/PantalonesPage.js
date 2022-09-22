@@ -2,11 +2,14 @@ import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
 import OrderBy from "../OrderBy";
 import Cards from "../Cards";
-import {DataPantalon} from "../data/DataAll";
+import { DataContext } from "../data/DataProvider";
+import { useContext } from "react";
 
 function PantalonesPage() {
+  const value = useContext(DataContext)
+  const [productos] = value.productos
   return (
-    <div>
+    <>
       <div>
         <PageSectionImage
           ImgPantalones={ImagePantalones}
@@ -14,8 +17,8 @@ function PantalonesPage() {
         />
         <OrderBy />
       </div>
-      <Cards data={DataPantalon} />
-    </div>
+      <Cards data={productos} />
+    </>
   );
 }
 

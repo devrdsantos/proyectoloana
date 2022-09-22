@@ -1,7 +1,9 @@
+import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 
 function Cards(props) {
+
   return (
     <CardSection>
       {props.data.map((e) => (
