@@ -15,8 +15,8 @@ import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
 import { DataProvider } from "./components/data/DataProvider";
 function App() {
   return (
-    <DataProvider>
-      <div className="App">
+    <div className="App">
+      <DataProvider>
         <Router>
           <Header />
           <Routes>
@@ -32,8 +32,8 @@ function App() {
           </Routes>
           <Footer />
         </Router>
-      </div>
-    </DataProvider>
+      </DataProvider>
+    </div>
   );
 }
 
