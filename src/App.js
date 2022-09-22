@@ -8,10 +8,7 @@ import ShortsPage from "./components/pages/ShortsPage";
 import OfertasPage from "./components/pages/OfertasPage";
 import CamperasPage from "./components/pages/CamperasPage";
 import HomePage from "./components/pages/HomePage";
-import EnterProfile from "./components/pages/EnterProfile";
-import NovedadesPage from "./components/pages/NovedadesPage";
-import Faq from "./components/pages/Faq";
-import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
+import FaqPage from "./components/pages/FaqPage";
 
 function App() {
   return (
@@ -23,7 +20,8 @@ function App() {
           <Route path="/pantalones" element={<PantalonesPage />} />
           <Route path="/shorts" element={<ShortsPage />} />
           <Route path="/camperas" element={<CamperasPage />} />
-          <Route path="/ofertas" element={<OfertasPage />} />          
+          <Route path="/ofertas" element={<OfertasPage />} /> 
+          <Route path="/faq" element={<FaqPage />} />         
         </Routes>
         <Footer />
       </Router>
