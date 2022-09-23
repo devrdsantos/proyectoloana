@@ -112,12 +112,12 @@ function Footer() {
       <div className="container-fluid bg-black footer-mobile">
         <div className="d-flex justify-content-between">
           <div className="d-flex flex-column color-footer-mobile">
-            <p>Contacto</p>
+            <p className="border-bottom-mobile-footer">Contacto</p>
             <p>Av. San Martín 1587, CABA, Buenos Aires</p>
             <p>(+54) 9 11-5674-1599</p>
           </div>
           <div className="d-flex flex-column color-footer-mobile">
-            <p>Seguinos</p>
+            <p className="border-bottom-mobile-footer">Seguinos</p>
             <div className="d-flex flex-column">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/">

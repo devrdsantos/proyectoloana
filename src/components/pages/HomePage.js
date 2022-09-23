@@ -33,6 +33,11 @@ const LoMasVendido = styled.div`
     font-size: 28px;
     font-family: "Outfit";
   }
+  @media (max-width: 800px) {
+    h1 {
+      margin-top: 1rem;
+    }
+  }
 `;
 
 const DivPosition = styled.div`

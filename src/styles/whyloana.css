@@ -80,3 +80,9 @@
     height: 360px;
   }
 }
+
+@media (max-width: 800px) {
+  .whyloana {
+    display: none;
+  }
+}

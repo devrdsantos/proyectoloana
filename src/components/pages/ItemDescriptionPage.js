@@ -7,6 +7,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Cards from "../Cards";
 import { DataContext } from "../data/DataProvider";
 import React,{useState, useContext} from "react";
+import Whyloana from "../Whyloana";
 function ItemDescriptionPage() {
   const [count ,setCount] = useState(0);
   const suma = () => setCount(count + 1);
@@ -119,17 +120,18 @@ function ItemDescriptionPage() {
         <DivPosition />
       </TambienTePodria>
         <Cards data={filtrado} />
+        <Whyloana />
       </ContainerPage>
     </>
   );
 }
 
 const ContainerPage = styled.div`
-margin-left: 1.6rem;
-  h4{
+  margin-left: 1.6rem;
+  h4 {
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Outfit';
+    font-family: "Outfit";
     padding-left: 2rem;
   }
 `;
@@ -159,11 +161,18 @@ const ContainerImgDescription = styled.div`
     height: 752px;
     margin-bottom: 3rem;
     margin-right: 4rem;
+    @media (max-width: 1366px) {
+      width: 450px;
+      height: 500px;
+    }
   }
 `;
 const Estrellas = styled.div`
   display: flex;
   margin: 0 0 1rem 0;
+  @media (max-width: 1366px) {
+    margin: 0 0 0.5rem 0;
+  }
 
   img {
     width: 24px;
@@ -191,6 +200,9 @@ const TituloyPrecio = styled.div`
     font-weight: 300;
     font-family: "Outfit";
     color: #1b1b1b;
+    @media (max-width: 1366px) {
+      margin: 0 0 0.5rem 0;
+    }
   }
 `;
 const Colores = styled.div`
@@ -199,6 +211,9 @@ const Colores = styled.div`
     font-weight: 400;
     font-family: "Outfit";
     margin: 0 0 0.6rem 0;
+    @media (max-width: 1366px) {
+      margin: 0 0 0.3rem 0;
+    }
   }
 
   button {
@@ -220,11 +235,17 @@ const Talles = styled.div`
     &:hover {
       background-color: #c1c1c1;
     }
+    @media (max-width: 1366px) {
+      margin-bottom: 1rem;
+    }
   }
 `;
 const TallesText = styled.div`
   display: flex;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
+  @media (max-width: 1366px) {
+    margin-bottom: 0.5rem;
+  }
 
   h5 {
     margin: 0;
@@ -243,6 +264,9 @@ const TallesText = styled.div`
 `;
 const Cantidad = styled.div`
   margin-bottom: 1.5rem;
+  @media (max-width: 1366px) {
+    margin-bottom: 1rem;
+  }
 `;
 const BotonCantidad = styled.div`
   display: flex;
@@ -266,6 +290,9 @@ const AñadirAlCarrito = styled.div`
   width: 216px;
   height: 40px;
   margin-bottom: 2rem;
+  @media (max-width: 1366px) {
+    margin-bottom: 1.5rem;
+  }
   button {
     width: 216px;
     height: 40px;
@@ -283,9 +310,14 @@ const TambienTePodria = styled.div`
   align-items: center;
   position: relative;
   margin-bottom: 2rem;
+
+  @media (max-width: 1366px) {
+    margin-bottom: 1.5rem;
+  }
   h1 {
     font-size: 28px;
     font-family: "Outfit";
+    z-index: 1;
   }
 `;
 const DivPosition = styled.div`
@@ -294,5 +326,6 @@ const DivPosition = styled.div`
   width: 458px;
   height: 16px;
   bottom: 10px;
+  z-index: 2;
 `;
 export default ItemDescriptionPage;

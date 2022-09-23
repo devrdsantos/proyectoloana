@@ -6,6 +6,7 @@
 
 .button-decoration-footer {
   background-color: black;
+  border: none;
 }
 
 .button-decoration-footer:hover {
@@ -81,6 +82,11 @@
 
 .color-footer-mobile {
   color: #e2e2e2;
+}
+
+.border-bottom-mobile-footer {
+  border-bottom: solid 2px white;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 500px) {
