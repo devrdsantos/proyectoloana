@@ -4,6 +4,7 @@ import "../styles/nosotros.css"
 
 function Nosotros() {
     return (
+        
         <section class="about">
         <div class="container flex items-centre">
 
@@ -26,10 +27,17 @@ function Nosotros() {
         </p>
 
         <div class="socials">
+            <a href="#">
+                <img src="img/instagram.png" width="40px" />
+            </a>
 
-            <a href="#"><img src="img/instagram.png" width="40px" /></a>
-            <a href="#"><img src="img/tw.png" width="40px" /></a>
-            <a href="#"><img src="img/facebook.png" width="40px" /></a>
+            <a href="#">
+                <img src="img/tw.png" width="40px" />
+            </a>
+
+            <a href="#">
+                <img src="img/facebook.png" width="40px" />
+            </a>
 
         </div>
         </div>
