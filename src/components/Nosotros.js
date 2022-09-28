@@ -1,6 +1,9 @@
 import React from "react";
 import "../styles/nosotros.css"
 
+import facebook2 from "../assets/facebook2.png"
+import instagram2 from "../assets/instagram.png"
+import twiter from "../assets/tw.png"
 
 function Nosotros() {
     return (
@@ -18,15 +21,15 @@ function Nosotros() {
     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
         <div className="socials">
-            <a className="enlaces-nosotros" href="#">
-            <img src="img/instagram.png" width="40px" />
-            </a>
-            <a className="enlaces-nosotros" href="#">
-            <img src="img/tw.png" width="40px" />
-            </a>
-            <a className="enlaces-nosotros" href="#">
-            <img src="img/facebook.png" width="40px" />
-            </a>
+            <span className="enlaces-nosotros" href="#">
+            <img src={instagram2} width="40px" alt="" />
+            </span>
+            <span className="enlaces-nosotros" href="#">
+            <img src={twiter} width="40px" alt=""/>
+            </span>
+            <span className="enlaces-nosotros" href="#">
+            <img src={facebook2} width="40px" alt="" />
+            </span>
         </div>
     </div>
     </div>
