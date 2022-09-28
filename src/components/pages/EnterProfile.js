@@ -12,9 +12,9 @@ function EnterProfile() {
     <div className="App">
       <div className="contenedor-user-register">
         <div className="cont-principal">
-          <div className="contenedor-logo">
+          {/* <div className="contenedor-logo">
             <img src={loana1} alt="" />
-          </div>
+          </div> */}
 
           <div className="contenedor-formulario">
             <div className="btn-registro-inicio-sesion">
