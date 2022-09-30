@@ -13,6 +13,7 @@ import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
 import { DataProvider } from "./components/data/DataProvider";
 import NovedadesPage from "./components/pages/NovedadesPage";
 import EnterProfile from "./components/pages/EnterProfile";
+import NosotrosPage from "./components/pages/NosotrosPage";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
             <Route path="/user" element={<EnterProfile />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/item" element={<ItemDescriptionPage />} />
-            <Route path="/nosotros" element={<ItemDescriptionPage />} />
+            <Route path="/nosotros" element={<NosotrosPage />} />
           </Routes>
           <Footer />
         </Router>
