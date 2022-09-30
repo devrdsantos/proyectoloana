@@ -8,11 +8,12 @@ import ShortsPage from "./components/pages/ShortsPage";
 import OfertasPage from "./components/pages/OfertasPage";
 import CamperasPage from "./components/pages/CamperasPage";
 import HomePage from "./components/pages/HomePage";
-import EnterProfile from "./components/pages/EnterProfile";
-import NovedadesPage from "./components/pages/NovedadesPage";
 import FaqPage from "./components/pages/FaqPage";
 import ItemDescriptionPage from "./components/pages/ItemDescriptionPage";
 import { DataProvider } from "./components/data/DataProvider";
+import NovedadesPage from "./components/pages/NovedadesPage";
+import EnterProfile from "./components/pages/EnterProfile";
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
             <Route path="/user" element={<EnterProfile />} />
             <Route path="/faq" element={<FaqPage />} />
             <Route path="/item" element={<ItemDescriptionPage />} />
+            <Route path="/nosotros" element={<ItemDescriptionPage />} />
           </Routes>
           <Footer />
         </Router>

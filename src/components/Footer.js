@@ -29,7 +29,7 @@ function Footer() {
             </div>
             <div className="mb-2">
               <button className="button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/pantalones">
+                <Link className=" link-footer-color" to="/nosotros">
                   Sobre nosotros
                 </Link>
               </button>
@@ -108,6 +108,7 @@ function Footer() {
           </div>
         </div>
       </div>
+
       {/* FOOTER MOBILE */}
       <div className="container-fluid bg-black footer-mobile">
         <div className="d-flex justify-content-between">
