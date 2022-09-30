@@ -24,9 +24,11 @@ function Nosotros() {
             <span className="enlaces-nosotros" href="#">
             <img src={instagram2} width="40px" alt="" />
             </span>
+
             <span className="enlaces-nosotros" href="#">
             <img src={twiter} width="40px" alt=""/>
             </span>
+            
             <span className="enlaces-nosotros" href="#">
             <img src={facebook2} width="40px" alt="" />
             </span>
