@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import PantalonesPage from "./components/pages/PantalonesPage";
 import ShortsPage from "./components/pages/ShortsPage";
 import OfertasPage from "./components/pages/OfertasPage";
