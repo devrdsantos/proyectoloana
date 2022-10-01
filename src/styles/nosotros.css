@@ -1,0 +1,80 @@
+.about {
+  box-shadow: 0 10px 0 0 #ffe661 inset;
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+section.about h1 span {
+  color: var(--primary);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: var(--secondary);
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+section.about .socials {
+  display: flex;
+}
+section.about .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+section.about .socials a:hover {
+  background: var(--primary);
+}
+
+section.about .socials {
+  display: flex;
+}
+section.about .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+section.about .socials a:hover {
+  background: var(--primary);
+}
+
+.flex {
+  display: flex;
+}
+.items-centre {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: right;
+}
+.flex-1 {
+  flex: 1;
+}
