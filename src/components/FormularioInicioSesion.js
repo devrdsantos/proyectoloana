@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/formularioregistro.css";
 
 function FormularioInicioSesion() {
@@ -19,11 +20,11 @@ function FormularioInicioSesion() {
         autoComplete="off"
       />
 
-      <p href="#" className="link-cambio-contrasenia">
+      <Link to={'#'} className="link-cambio-contrasenia">
         ¿Has olvidado tu contraseña?
-      </p>
+      </Link>
 
-      <input type="submit" value="INGRESAR" className="btn-registrarse" />
+      <Link to={'/'}><input type="submit" value="INGRESAR" className="btn-registrarse" /></Link>
     </form>
   );
 }

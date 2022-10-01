@@ -16,7 +16,7 @@ body {
     margin: 1em;
 }
 
-#nombre, #apellido, #genero, #email, #contrasenia {
+#nombre, #apellido, #genero, #email, #contrasenia, #repetircontrasenia {
     width: 400px;
     padding: 10px;
     border: 1px solid #E2E2E2;
@@ -64,6 +64,8 @@ body {
 .link-cambio-contrasenia {
     margin: 0;
     font-size: 12px;
+    color: black;
+    text-decoration: none;
 }
 
 .registro-exitoso{

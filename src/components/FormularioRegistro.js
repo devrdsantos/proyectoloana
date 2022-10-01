@@ -12,6 +12,7 @@ function FormularioRegistro() {
         genero: "masculino",
         email: "",
         contrasenia: "",
+        repetircontrasenia: ""
       }}
       validate={(valores) => {
         let errores = {};
@@ -54,11 +55,19 @@ function FormularioRegistro() {
             "La contraseña debe tener al menos 8 caracteres, una letra mayúscula y un número";
         }
 
+        // Validación de repetición de contraseña
+        if (!valores.repetircontrasenia) {
+          errores.repetircontrasenia = 'Por favor ingrese una contraseña'
+        } else if (valores.contrasenia !== valores.repetircontrasenia) {
+          errores.repetircontrasenia = 'Las contraseñas no coinciden'
+        }
+
         return errores;
       }}
       onSubmit={(valores, { resetForm }) => {
         // 'Valores' obtiene cada valor de cada input, desde acá lo puedo mandar a una BD.
         console.log("formulario enviado");
+        console.log(valores)
         // Reseteo formulario al tocar el botón registrarse
         resetForm();
         // Muestro párrafo de registro con exito
@@ -153,6 +162,20 @@ function FormularioRegistro() {
           {touched.contrasenia && errors.contrasenia && (
             <div className="div-error">{errors.contrasenia}</div>
           )}
+
+          <label htmlFor="repetircontrasenia">
+            REPITA SU CONTRASEÑA:
+          </label>
+          <input
+            type="password"
+            name="repetircontrasenia"
+            id="repetircontrasenia"
+            autoComplete="off"
+            value={values.repetircontrasenia}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {touched.repetircontrasenia && errors.repetircontrasenia && <div className="div-error">{errors.repetircontrasenia}</div>}
 
           <input
             type="submit"
