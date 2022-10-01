@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "../styles/header.css";
-import logoHeaderDesktop from "../assets/logo-header-desktop.png";
+import logoHeaderDesktop from "../assets/logoheadernuevo.png";
 import searchIcon from "../assets/search-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBagShopping,
-  faUserCircle,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import userVector from "../assets/img__vectores/user.svg";
+import infoVector from "../assets/img__vectores/Info.svg";
+import bagVector from "../assets/img__vectores/bag-2.svg";
 import ModalNavHeaderMobile from "./ModalNavHeaderMobile";
 import { Link } from "react-router-dom";
 
@@ -38,49 +37,61 @@ function Header() {
           <div className="nav-desktop">
             <ul className="ul-nav-desktop">
               <li className="li-nav-desktop">
-                <Link to="/jeans" className="link-style">
-                  Jeans
+                <Link to="/pantalones" className="link-style">
+                  PANTALONES
                 </Link>
               </li>
               <li className="li-nav-desktop">
                 <Link to="/shorts" className="link-style">
-                  Shorts
+                  SHORTS
                 </Link>
               </li>
               <li className="li-nav-desktop">
                 <Link to="/camperas" className="link-style">
-                  Camperas
+                  CAMPERAS
                 </Link>
               </li>
               <li className="li-nav-desktop">
-                <Link to="/ofertas" className="link-style">
-                  Ofertas
+                <Link to="/ofertas" className="orange-color-ofertas">
+                  OFERTAS
+                </Link>
+              </li>
+              <li className="li-nav-desktop">
+                <Link to="/novedades" className="link-style">
+                  NOVEDADES
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="search-container">
-            <form
-              action="https://www.google.com/search"
-              method="get"
-              className="search-form-desktop"
-            >
-              <input
-                type="text"
-                className="input-search-desktop"
-                placeholder="Buscar"
-              />
-              <button type="submit" className="search-button-desktop">
-                <img src={searchIcon} alt="icono de busqueda" />
-              </button>
-            </form>
-          </div>
           <div className="nav-buttons-desktop">
+            <div className="search-container">
+              <form
+                action="https://www.google.com/search"
+                method="get"
+                className="search-form-desktop"
+              >
+                <input
+                  type="text"
+                  className="input-search-desktop"
+                  placeholder="Buscar"
+                />
+                <button type="submit" className="search-button-desktop">
+                  <img src={searchIcon} alt="icono de busqueda" />
+                </button>
+              </form>
+            </div>
             <button className="profile-button-desktop">
-              <FontAwesomeIcon icon={faUserCircle} className="fa-xl" />
+              <Link to="/user">
+                <img src={userVector} alt="logo del user" />
+              </Link>
             </button>
             <button className="compras-button-desktop">
-              <FontAwesomeIcon icon={faBagShopping} className="fa-xl" />
+              <Link to="/faq">
+                <img src={infoVector} alt="icono de ayuda" />
+              </Link>
+            </button>
+            <button className="compras-button-desktop pe-5">
+              <img src={bagVector} alt="icono de la bolsa de compras" />
             </button>
           </div>
         </div>

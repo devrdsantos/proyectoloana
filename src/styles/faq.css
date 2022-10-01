@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+.main {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 30px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  background-color: #fefffa;
+  transform: translate(-50%, 0);
+  box-shadow: 0 10px 0 0 #ffe661 inset;
+}
+
+@media (max-width: 550px) {
+  .main {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+.title-faq,
+.subtitle-faq {
+  color: #ff7a00;
+}
+
+.title-faq {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.subtitle-faq {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #fefffa;
+  margin: 0;
+  cursor: pointer;
+}

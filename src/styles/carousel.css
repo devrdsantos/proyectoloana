@@ -1,55 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
 
 .z-index-carousel {
-position: relative;
-z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
-.img-size-carousel1 , .img-size-carousel2{
-    width: 100%;
-    height: 65vw;
-    max-height: 465px;
-    min-height: 375px;
+.img-size-carousel1,
+.img-size-carousel2 {
+  width: 100%;
+  height: 740px;
+  max-height: 740px;
+  min-height: 375px;
 }
 .img-size-carousel1 {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .img-size-carousel2 {
-    object-fit: fill;
+  object-fit: fill;
 }
 
-.texto1carousel , .texto2carousel{
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 0px;
-    color: white;
-    text-shadow: 2px 1px black;
+.texto1carousel,
+.texto2carousel {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: 2px 1px black;
 }
 
-.texto1carousel{
-    font-size: 60px;
+.texto1carousel {
+  font-size: 68px;
 }
 
-.texto2carousel{
-    font-size: 36px;
+.texto2carousel {
+  font-size: 52px;
 }
 
-.position-carousel-absolute{
-    position: absolute;
-    bottom: 0;
-    padding-left: 2rem;
-    padding-bottom: 3rem;
+.position-carousel-absolute {
+  position: absolute;
+  bottom: 0;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
 }
 
-.carousel-control-next-icon , .carousel-control-prev-icon {
-    display:none;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .img-size-carousel1,
+  .img-size-carousel2 {
+    max-height: 550px;
+    min-height: 375px;
+  }
+
+  .texto1carousel {
+    font-size: 54px;
+  }
+  .texto2carousel {
+    font-size: 44px;
+  }
 }
 
 @media (max-width: 700px) {
-    .texto1carousel {
-        font-size: 28px;
-    }
-    .texto2carousel{
-        font-size: 23px;
-    }
+  .texto1carousel {
+    font-size: 28px;
+  }
+  .texto2carousel {
+    font-size: 23px;
+  }
 }

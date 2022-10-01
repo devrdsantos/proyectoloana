@@ -1,9 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+.footer-desktop {
+  font-family: "Outfit", sans-serif;
+}
+
 .button-decoration-footer {
   background-color: black;
+  border: none;
 }
 
 .button-decoration-footer:hover {
   color: white;
+}
+
+.div-p-footer-contacto,
+.div-p-footer-seguinos,
+.div-p-footer-masinformacion {
+  position: relative;
+}
+
+.border-bottom-masinformacion {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.border-bottom-contacto {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.border-bottom-seguinos {
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 80px;
+  height: 2px;
+  background-color: #e2e2e2;
+}
+
+.padding-seguinos {
+  padding-left: 80px;
 }
 
 .link-footer-color {
@@ -16,9 +66,14 @@
 }
 
 .font-size-footer-logo-direction-number {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
+  margin-top: 5px;
+}
+
+.margin-bottom-footer {
+  margin-bottom: 32px;
 }
 
 .copyright-footer-mobile {
@@ -27,6 +82,27 @@
 
 .color-footer-mobile {
   color: #e2e2e2;
+}
+/* estilos para borde inferior */
+.aux-desktop-border-footer{
+  border: 3px solid white;
+  border-style: solid hidden hidden;
+  padding-right: 100px;
+  padding-top: 1px;
+  margin-right: 400px;
+}
+/* estilos para borde inferior */
+.aux-desktop-border-footerContacto{
+  border: 3px solid white;
+  border-style: solid hidden hidden ;
+  padding-right: 230px;
+  padding-top: 1px;
+  margin-right: 400px;
+}
+
+.border-bottom-mobile-footer {
+  border-bottom: solid 2px white;
+  padding-bottom: 0.5rem;
 }
 
 @media (max-width: 500px) {

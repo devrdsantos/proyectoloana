@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+.whyloana {
+  margin-top: 3rem;
+  width: 100%;
+  height: 420px;
+  font-family: "Outfit", sans-serif;
+  background-color: #ff7a0040;
+}
+
+.h1whyloana {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 36px;
+  padding-top: 2rem;
+}
+
+.container-item-whyloana {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4rem;
+}
+
+.div-item-whyloana {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+
+.img-item-whyloana1 {
+  align-items: center;
+  width: 28px;
+  height: 57px;
+}
+
+.img-item-whyloana2 {
+  width: 36px;
+  height: 69px;
+}
+
+.img-item-whyloana3 {
+  width: 58px;
+  height: 64px;
+}
+
+.h3-items-whyloana {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.h3-items-whyloana1 {
+  padding-bottom: 20px;
+}
+
+.h3-items-whyloana2 {
+  padding-bottom: 20px;
+}
+
+.div-container-h3-p-whyloana {
+  width: 300px;
+}
+.div-container-h3-p-whyloana3 {
+  width: 350px;
+}
+
+.p-whyloana {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media (max-width: 1366px) {
+  .whyloana {
+    height: 360px;
+  }
+}
+
+@media (max-width: 800px) {
+  .whyloana {
+    display: none;
+  }
+}

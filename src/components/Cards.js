@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
 import styled from "styled-components";
 import Filtros from "./Filtros";
@@ -245,39 +246,41 @@ const CardsHome = styled.div `
         justify-content: center;
         width: 50%;
         background-color: gray;
+=======
+import React from "react";
+import styled from "styled-components";
+import Card from "./Card";
+>>>>>>> 5997d2c2dfa200c4c95dff1831154973a8a952d2
 
-    }
-    ul , .heart-icon{
-        display: none;
-    }
-    &:hover{
-        ul{
-            display: none;
-        }
-    }
+function Cards(props) {
+
+  return (
+    <CardSection>
+      {props.data.map((e) => (
+        <Card
+          key={e.id}
+          talles={e.talles}
+          img={e.imagen}
+          titulo={e.title}
+          precio={e.price}
+          descripcion={e.alt}
+          descuentos={e.descuentos}
+          nuevo={e.nuevo}
+          cartel={props.showcartel}
+        />
+      ))}
+      </CardSection>
+    );
   }
-`;
-const Controles = styled.div`
-    position: absolute;
-    top: 31px;
-    width: 100%;
-    height: 269px;
-    pointer-events: none;
-    
-`;
-const Boton = styled.button`
-    position: absolute;
-    pointer-events: all;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    width: 50px;
-    height: 100%;
-    text-align: center;
-    & svg {
-        color: rgba(0, 0, 0, 0.4);
-    }
-    ${props=>(props.derecho)?"right: 0":"left:0"}
+
+const CardSection = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  @media (max-width: 768px) {
+    gap: 15px;
+  }
 `;
 export default Cards;

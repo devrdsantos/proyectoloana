@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+
+.mainofertasynovedades-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.container-button-mainofertasynovedades {
+  position: relative;
+  display: flex;
+}
+
+.button-ofertas-main {
+  background-image: url(../assets/ofertasmainbutton.png);
+  border-radius: 5px;
+  width: 668px;
+  height: 312px;
+  border: none;
+  filter: brightness(100%);
+}
+
+.button-ofertas-main:hover {
+  filter: brightness(50%);
+}
+
+.button-novedades-main {
+  background-image: url(../assets/novedadesmainbutton.png);
+  border-radius: 5px;
+  width: 668px;
+  height: 312px;
+  border: none;
+}
+
+.button-novedades-main:hover {
+  filter: brightness(50%);
+}
+
+.p-mainofertasynovedades {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  color: #ffff;
+  text-shadow: 2px 2px 2px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1366px) {
+  .button-ofertas-main,
+  .button-novedades-main {
+    width: 600px;
+    height: 312px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainofertasynovedades-container {
+    display: none;
+  }
+}
