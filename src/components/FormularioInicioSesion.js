@@ -20,7 +20,7 @@ function FormularioInicioSesion() {
         autoComplete="off"
       />
 
-      <Link to={'#'} className="link-cambio-contrasenia">
+      <Link to={'/'} className="link-cambio-contrasenia">
         ¿Has olvidado tu contraseña?
       </Link>
 

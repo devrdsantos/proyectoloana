@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FormularioInicioSesion from "../FormularioInicioSesion";
 import FormularioRegistro from "../FormularioRegistro.js";
-import loana1 from "../../assets/loana1.png";
+//import loana1 from "../../assets/loana1.png";
 import google from "../../assets/google.png";
 import facebook from "../../assets/facebook.png";
 import "../../styles/enterprofile.css";
@@ -51,16 +51,16 @@ function EnterProfile() {
             </p>
 
             <div className="contenedor-google-facebook">
-              <Link to={''} className="btn-ingreso-redes-sociales link-cambio-contrasenia">
+              <a href="https://google.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
                 {" "}
                 <img src={google} alt="" />
                 <p href="">GOOGLE</p>
-              </Link>
-              <Link to={''} className="btn-ingreso-redes-sociales link-cambio-contrasenia">
+              </a>
+              <a href="https://facebook.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
                 {" "}
                 <img src={facebook} alt="" />
                 <p href="">FACEBOOK</p>{" "}
-              </Link>
+              </a>
             </div>
           </div>
         </div>
