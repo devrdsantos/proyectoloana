@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {ReactComponent as FlechaIzquierda} from './../assets/iconmonstr-angel-left-thin.svg';
 import {ReactComponent as FlechaDerecha} from './../assets/iconmonstr-angel-right-thin.svg';
-import img1 from "../assets/img_cards/imagen-1.jpg";
-import img2 from "../assets/img_cards/imagen-2.jpg";
-import img3 from "../assets/img_cards/imagen-3.jpg";
+import img1 from "../assets/img_cards/modelo1.png";
+import img2 from "../assets/img_cards/modelo2.png";
+import img3 from "../assets/img_cards/modelo3.png";
 const datos = [
     {
         id : 1,
@@ -107,14 +107,14 @@ function Cards () {
                         <button className="heart-icon"><FontAwesomeIcon icon={faHeart}/></button>
                         <div className="contenedor-imagen">
                             <img src={imagen} alt={alt} />
-                            <Controles className="hidenbutton">
-                                <Boton>
+                            <controles className="hidenbutton">
+                                <boton>
                                     <FlechaIzquierda />
-                                </Boton>
-                                <Boton derecho>
+                                </boton>
+                                <boton derecho>
                                     <FlechaDerecha />
-                                </Boton>
-                            </Controles>
+                                </boton>
+                            </controles>
                         </div>
                         <h1>{title}</h1>
                         <p>${price}</p>
