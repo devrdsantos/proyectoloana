@@ -198,17 +198,11 @@
 
 @media (max-width: 800px) {
   .img-logo-header-desktop {
-    width: 250px;
+    width: 180px;
   }
 }
 
-@media (max-width: 600px) {
-  .img-logo-header-desktop {
-    width: 200px;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .header-desktop {
     display: none;
   }
@@ -218,7 +212,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .header-mobile {
     display: none;
   }

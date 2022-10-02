@@ -113,7 +113,7 @@ function Footer() {
 
       {/* FOOTER MOBILE */}
       <div className="container-fluid bg-black footer-mobile">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between pt-2">
           <div className="d-flex flex-column color-footer-mobile">
             <p className="border-bottom-mobile-footer">Contacto</p>
             <p>Av. San Martín 1587, CABA, Buenos Aires</p>

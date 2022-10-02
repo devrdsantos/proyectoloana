@@ -92,7 +92,7 @@ const ContenedorPrincipal = styled.div`
   overflow: hidden;
   width: 320px;
   height: 350px;
-  min-width: 320px;
+
   p {
     text-align: center;
     margin: 0;
@@ -104,11 +104,18 @@ const ContenedorPrincipal = styled.div`
       display: flex;
     }
   }
+  @media (max-width: 1400px) {
+    width: 280px;
+  }
 `;
 const ContenedorCard = styled.div`
   position: relative;
   width: 320px;
   height: 223px;
+  @media (max-width: 1400px) {
+    width: 280px;
+    height: 200px;
+  }
 `;
 const ContenedorSlideShow = styled.div`
   display: flex;

@@ -1,5 +1,6 @@
 .about {
   box-shadow: 0 10px 0 0 #ffe661 inset;
+  padding: 6rem;
 }
 
 .container {
@@ -8,9 +9,6 @@
   margin: 0 auto;
 }
 
-section {
-  padding: 6rem;
-}
 section.about h1 {
   margin-bottom: 1rem;
   font-size: 1.6rem;
