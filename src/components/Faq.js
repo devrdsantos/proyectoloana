@@ -49,13 +49,62 @@ Entregado a cliente: ya has recibido tu pedido.
             <h2 className="subtitle-faq">Cambios y Devoluciones</h2>
           </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+        <h3>          CÓMO DEVOLVER
+Dispones de 30 días desde la fecha de envío de tu pedido para devolver la compra de LoanaJeans.com.ar  Los artículos deben conservar todas las etiquetas y estar en perfecto estado.
+
+Estas son las opciones para devolver tu mercancía:
+
+
+Tienda LoanaJeans
+Puedes devolver tu pedido de forma gratuita en cualquier tienda LoanaJeans.com.ar del país/región donde realizaste la compra.
+
+Solo tendrás que presentar los artículos que quieras devolver junto con el ticket de compra. Puedes llevarlo en tu móvil o impreso.
+
+Recuerda que para la devolución en tienda no es necesario realizar una solicitud en la web/APP.
+
+Ten en cuenta que si no puedes acudir a la tienda, la persona que tú elijas podrá hacerlo en tu lugar.
+
+¿Cómo puedes acceder a tu ticket de compra?
+
+Inicia sesión con tu usuario y contraseña. En el detalle del pedido que quieras devolver, tendrás la opción de acceder a tu ticket electrónico.
+
+Encuentra aquí tu tienda más cercana.
+
+
+Desde domicilio
+Las devoluciones tienen un coste de 490,00 ARS, que se descontará del importe reembolsado.
+
+Podrás solicitar la devolución desde el apartado Devoluciones. Puedes devolver artículos de diferentes pedidos en el mismo envío.Un transportista recogerá tu paquete en la dirección que elijas en 24-72 horas.
+
+Recuerda que tienes que enviar los artículos que quieras devolver en el plazo de 30 días desde la fecha de envío de tu compra, antes de que expire el plazo de devolución.
+
+
+Punto de entrega
+Puedes devolver tu pedido de forma gratuita a través de un punto de entrega en el mismo país/región donde realizaste la compra.
+
+Podrás solicitar la devolución desde el apartado Devoluciones.
+
+Puedes devolver artículos de diferentes pedidos en el mismo envío. Recibirás en tu email tantas etiquetas de devolución como cajas vayas a enviar. Para realizar el envío, pega la etiqueta en el paquete devolución y podrás entregarlo en cualquier oficina de Correo Argentino. Por favor, selecciona la opción "recep. Paquetería e-commerce nacionales" para encontrar tu oficina más cercana.
+
+Recuerda que tienes que depositar los artículos a devolver en el punto de entrega en el plazo de 30 días desde la fecha de envío de tu compra, antes de que expire el plazo de devolución.
+
+Puedes encontrar más información acerca de la Política de Cambios y Devoluciones o del derecho de desistimiento en nuestras Condiciones de compra.</h3>
+
+    <h3>
+    CÓMO CAMBIAR
+
+Dispones de 30 días desde la fecha de envío para realizar un cambio de tu compra de LoanaJeans.com.ar de manera gratuita.  Los artículos deben conservar todas las etiquetas y estar en perfecto estado.
+
+Puedes cambiar la talla o color de tus artículos. Acércate a una tienda LoanaJeans.com.ar que tenga la misma sección a la que pertenece el artículo con el ticket de compra. Puedes llevarlo en tu móvil o impreso.
+
+Si prefieres un cambio por otra prenda diferente se gestionará una devolución y una nueva compra.
+
+Recuerda que para realizar un cambio en tienda no es necesario realizar una solicitud en la web/APP.
+
+Puedes encontrar más información acerca de la Política de Cambios y Devoluciones o al derecho de desistimiento en nuestras Condiciones de compra.
+
+    </h3>
+
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4">
@@ -64,13 +113,17 @@ Entregado a cliente: ya has recibido tu pedido.
             <h2 className="subtitle-faq">Pagos</h2>
           </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+<h3>
+MÉTODOS DE PAGO
+Disponemos de los siguientes medios de pago:
+
+1. Visa
+2. Mastercard
+3. American Express
+4. Diners Club
+5. Cabal
+- Para el pago con Tarjeta Regalo puedes obtener más información en la sección Tarjeta Regalo.
+</h3>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="5">
@@ -79,13 +132,11 @@ Entregado a cliente: ya has recibido tu pedido.
             <h2 className="subtitle-faq">Productos</h2>
           </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <h3>
+              En LoanaJeans.com.ar podrás encontrar novedades cada semana, igual que en nuestras tiendas.
+
+    Si el artículo que te interesa está agotado pero tiene el símbolo  comming soon , puedes registrar tu email y te avisaremos siempre que vuelva a estar disponible en los 15 días posteriores a tu registro. Este proceso no equivale a una reserva.
+Además, a través de LoanaJeans.com.ar podrás acceder al stock de nuestras tiendas gracias a la opción “Ver disponibilidad en tienda”.</h3>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="6">
