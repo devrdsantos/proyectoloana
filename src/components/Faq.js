@@ -31,10 +31,15 @@ También puedes acceder a esta información a través del apartado Compras.
 Estos son los estados por los que pasará tu pedido:
 
 Comprado: has finalizado correctamente la compra de tu pedido.
+
 En curso: hemos recibido la información de tu compra.
+
 En preparación: tu pedido está siendo preparado en el almacén.
+
 Enviado: el pedido ya ha salido de nuestras instalaciones.
+
 Recogido por transportista: tu pedido está en camino, lo recibirás próximamente.
+
 Entregado a cliente: ya has recibido tu pedido.
           </Accordion.Body>
         </Accordion.Item>
