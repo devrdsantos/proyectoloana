@@ -1,6 +1,9 @@
 .about {
   box-shadow: 0 10px 0 0 #ffe661 inset;
+<<<<<<< HEAD
   padding: 6rem;
+=======
+>>>>>>> marco
 }
 
 .container {
@@ -9,6 +12,12 @@
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
+=======
+section {
+  padding: 6rem;
+}
+>>>>>>> marco
 section.about h1 {
   margin-bottom: 1rem;
   font-size: 1.6rem;

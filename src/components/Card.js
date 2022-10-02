@@ -92,7 +92,6 @@ const ContenedorPrincipal = styled.div`
   overflow: hidden;
   width: 320px;
   height: 350px;
-
   p {
     text-align: center;
     margin: 0;
