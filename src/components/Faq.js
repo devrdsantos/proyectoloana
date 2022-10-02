@@ -144,7 +144,18 @@ Además, a través de LoanaJeans.com.ar podrás acceder al stock de nuestras tie
             {/* <ion-icon name="card-outline"></ion-icon> */}
             <h2 className="subtitle-faq">Tarjeta de regalos</h2>
           </Accordion.Header>
-          <Accordion.Body>Lorem</Accordion.Body>
+          <Accordion.Body>
+          COMPRAR TARJETA REGALO
+La Tarjeta Regalo de Loana es una tarjeta virtual que se envía por email. Con ella podrás comprar en tienda física o en LoanaJeans.com.ar
+
+Información útil sobre la Tarjeta Regalo: 
+Solamente es válida para el país/región en el que la has comprado.
+Es un documento al portador. LoanaJeans no reemplazará la Tarjeta en caso de robo, pérdida, extravío o deterioro.
+Tiene un período de validez determinado según país/región. Podrás ver esta información en el momento que elijas tu Tarjeta.
+Puedes consultar el saldo de tu Tarjeta desde la web de LoanaJeans.com.ar, en el apartado "Tarjeta Regalo,   Consultar Saldo", o directamente en una de nuestras tiendas LoanaJeans.
+El plazo para devolverla es el mismo que para cualquier otro artículo siempre y cuando la Tarjeta no haya sido usada. El reembolso se hará al método de pago original utilizado para la compra. Si la devolución se hace vía LoanaJeans.com.ar no es necesario enviarnos la Tarjeta físicamente.
+
+          </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="7">
           <Accordion.Header>
