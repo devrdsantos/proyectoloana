@@ -8,6 +8,17 @@
   margin: 0 auto;
 }
 
+@media (max-width: 550px) {
+  .container {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
 section {
   padding: 6rem;
 }
