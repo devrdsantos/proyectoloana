@@ -10,7 +10,7 @@ function OrderBy() {
       <Dropdown.Toggle split variant="light" id="dropdown-split-basic" />
 
       <Dropdown.Menu
-      name = "select" 
+      name = "select"
       defaultValue="destacados"
       >
         <Dropdown.Item value="relevante">Destacados</Dropdown.Item>

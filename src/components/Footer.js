@@ -53,7 +53,11 @@ function Footer() {
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/jeans">
-                  Ofertas
+                  Ofertas </Link>
+                  </button>
+              <button className=" button-decoration-footer text-secondary text-decoration-none">
+                <Link className=" link-footer-color" to="/faq">
+                  Ayuda
                 </Link>
               </button>
             </div>
