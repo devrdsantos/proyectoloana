@@ -4,13 +4,11 @@ import Cards from "../Cards.js";
 import Whyloana from "../Whyloana.js";
 import Mainofertasynovedades from "../Mainofertasynovedades.js";
 import styled from "styled-components";
-import DataHome from "../../components/data/DataHome";
-
-
+import { DataContext } from "../data/DataProvider.js";
 function HomePage() {
-  const value = useContext(DataContext)
+  const value = useContext(DataContext);
   const [productos] = value.productos;
-  const filtrado = productos.filter(e=>e.id<5);
+  const filtrado = productos.filter((e) => e.id < 5);
   return (
     <main>
       <CarouselMain />

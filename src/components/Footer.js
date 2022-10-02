@@ -14,7 +14,9 @@ function Footer() {
         <div className="row p-5 pb-2 bg-black text-white">
           <div className="col-xs-12 col-md-6 col-lg-3">
             <div className="h3">
-              <img src={logoFooter} width="200" alt="logo negro" />
+              <Link to="/">
+                <img src={logoFooter} width="200" alt="logo negro" />
+              </Link>
             </div>
           </div>
 
@@ -29,21 +31,21 @@ function Footer() {
             </div>
             <div className="mb-2">
               <button className="button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/pantalones">
+                <Link className=" link-footer-color" to="/nosotros">
                   Sobre nosotros
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/pantalones">
+                <Link className=" link-footer-color" to="/faq">
                   FAQ
                 </Link>
               </button>
             </div>
             <div className="mb-2">
               <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/pantalones">
+                <Link className=" link-footer-color" to="/faq">
                   Ayuda
                 </Link>
               </button>
@@ -109,10 +111,8 @@ function Footer() {
         </div>
       </div>
 
-
       {/* FOOTER MOBILE */}
       <div className="container-fluid bg-black footer-mobile">
-
         <div className="d-flex justify-content-between">
           <div className="d-flex flex-column color-footer-mobile">
             <p className="border-bottom-mobile-footer">Contacto</p>
