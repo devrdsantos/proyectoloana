@@ -123,13 +123,12 @@
 }
 
 .profile-button-desktop {
-    margin-left: 2rem;
-    border: 0;
-    background-color: transparent;
+  margin-left: 2rem;
+  border: 0;
+  background-color: transparent;
 }
 
 .profile-button-desktop:hover {
-  
 }
 
 .compras-button-desktop {
@@ -168,44 +167,6 @@
   .li-nav-desktop {
     font-size: 16px;
     padding: 1rem 1rem 1rem 1rem;
-<<<<<<< HEAD
-=======
-  }
-}
-
-@media (max-width: 1366px) {
-  .li-nav-desktop {
-    font-size: 14px;
-    padding: 1rem 1rem 1rem 1rem;
-  }
-
-  .img-logo-header-desktop {
-    width: 250px;
-  }
-
-  .search-container {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 1280px) {
-  .li-nav-desktop {
-    font-size: 12px;
-  }
-
-  .img-logo-header-desktop {
-    width: 220px;
-  }
-
-  .search-container {
-    padding-left: 0;
-  }
-}
-
-@media (max-width: 800px) {
-  .img-logo-header-desktop {
-    width: 250px;
->>>>>>> marco
   }
 }
 

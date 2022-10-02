@@ -126,9 +126,10 @@ const Slide = styled.div`
   transition: 0.3s ease all;
   max-height: 223px;
   position: relative;
+  object-fit: cover;
   & img {
     width: 100%;
-    height: 100%;
+    height: 195px;
     vertical-align: top;
   }
 `;
