@@ -9,10 +9,13 @@ function OrderBy() {
 
       <Dropdown.Toggle split variant="light" id="dropdown-split-basic" />
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Destacados</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Mayor precio</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Menor precio</Dropdown.Item>
+      <Dropdown.Menu
+      name = "select" 
+      defaultValue="destacados"
+      >
+        <Dropdown.Item value="relevante">Destacados</Dropdown.Item>
+        <Dropdown.Item value="descendente">Mayor precio</Dropdown.Item>
+        <Dropdown.Item value="ascendente">Menor precio</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

@@ -1,7 +1,9 @@
+import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
 
 function Cards(props) {
+
   return (
     <CardSection>
       {props.data.map((e) => (
@@ -17,9 +19,10 @@ function Cards(props) {
           cartel={props.showcartel}
         />
       ))}
-    </CardSection>
-  );
-}
+      </CardSection>
+    );
+  }
+
 const CardSection = styled.section`
   display: flex;
   flex-wrap: wrap;

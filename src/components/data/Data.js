@@ -3,7 +3,7 @@ import img2 from "../../assets/img_cards/modelo2.png";
 import img3 from "../../assets/img_cards/modelo3.png";
 import img4 from "../../assets/img_cards/modelo4.png";
 
-const DataPantalon = [
+export const Data = [
   {
     id: 1,
     imagen: [img1, img2, img3],
@@ -188,5 +188,3 @@ const DataPantalon = [
     nuevo: true,
   }
 ];
-
-export default DataPantalon;

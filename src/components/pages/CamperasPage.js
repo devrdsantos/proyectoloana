@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
 import Cards from "../Cards";
-import DataCamperas from "../data/DataCamperas";
 import OrderBy from "../OrderBy";
+import { DataContext } from "../data/DataProvider";
 function CamperasPage() {
+  const value = useContext(DataContext)
+  const [productos] = value.productos;
   return (
-    <div>
+    <>
       <PageSectionImage
         ImgPantalones={ImagePantalones}
         h1PageSection={"CAMPERAS"}
       />
-      <OrderBy />
-      <Cards data={DataCamperas} />
-    </div>
+      <OrderBy  />
+      <Cards data={productos} />
+    </>
   );
 }
-
 export default CamperasPage;

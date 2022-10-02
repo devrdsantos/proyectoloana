@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
 import Cards from "../Cards";
-import DataNovedades from "../data/DataNovedades";
 import OrderBy from "../OrderBy";
-
+import { DataContext } from "../data/DataProvider";
 function NovedadesPage() {
+  const value = useContext(DataContext);
+  const [productos] = value.productos;
   return (
     <div>
       <PageSectionImage
@@ -13,7 +14,7 @@ function NovedadesPage() {
         h1PageSection={"NOVEDADES"}
       />
       <OrderBy />
-      <Cards data={DataNovedades} />
+      <Cards data={productos} />
     </div>
   );
 }

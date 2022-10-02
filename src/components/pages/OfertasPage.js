@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import PageSectionImage from "../PageSectionImage";
 import ImagePantalones from "../../assets/img-pantalones.png";
-import DataOfertas from "../../components/data/DataOfertas"
 import Cards from "../Cards";
 import OrderBy from "../OrderBy";
+import { DataContext } from "../data/DataProvider";
 function OfertasPage() {
+  const value = useContext(DataContext)
+  const [productos] = value.productos
   return (
     <div>
       <PageSectionImage
@@ -12,7 +14,7 @@ function OfertasPage() {
         h1PageSection={"OFERTAS"}
       />
       <OrderBy />
-      <Cards data={DataOfertas} />
+      <Cards data={productos} />
     </div>
   );
 }
