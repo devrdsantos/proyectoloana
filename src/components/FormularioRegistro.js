@@ -9,7 +9,7 @@ function FormularioRegistro() {
       initialValues={{
         nombre: "",
         apellido: "",
-        genero: "masculino",
+        genero: "",
         email: "",
         contrasenia: "",
         repetircontrasenia: ""
@@ -163,7 +163,7 @@ function FormularioRegistro() {
             <div className="div-error">{errors.contrasenia}</div>
           )}
 
-          <label htmlFor="repetircontrasenia">
+          <label htmlFor="repetircontrasenia" className="label-register">
             REPITA SU CONTRASEÑA:
           </label>
           <input

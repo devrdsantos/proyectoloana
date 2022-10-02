@@ -109,3 +109,104 @@
 .btn-ingreso-redes-sociales img {
   width: 25px;
 }
+
+
+@media (max-width:1042px) {
+  .contenedor-formulario {
+    width: 700px;
+    height: auto;
+    margin: 70px;
+  }
+
+  .btn-ingreso-redes-sociales {
+    width: 130px;
+    height: 40px;
+    gap: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:750px) {
+  .contenedor-formulario {
+    width: 550px;
+    height: auto;
+    margin: 70px;
+  }
+
+  .btn-ingreso-redes-sociales {
+    width: 90px;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    font-size: 9px;
+  }
+
+  .btn-registro-inicio-sesion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin: 40px;
+    width: 450px;
+    height: 60px;
+    font-size: 15px;
+  }
+}
+
+  @media (max-width:500px) {
+    .contenedor-formulario {
+      width: 450px;
+      height: auto;
+      margin: 60px;
+    }
+  
+    .btn-ingreso-redes-sociales {
+      width: 115px;
+      height: 40px;
+      display: flex;
+      gap: 8px;
+      font-size: 10px;
+    }
+  
+    .btn-registro-inicio-sesion {
+      gap: 2em;
+      margin: 40px;
+      width: 350px;
+      height: 60px;
+      font-size: 15px;
+    }
+
+    .cont-principal {
+      gap: 5px;
+      width: 200px;
+    }
+  }
+
+  @media (max-width:455px) {
+    .contenedor-formulario {
+      width: 415px;
+      height: auto;
+      margin: 60px;
+    }
+  
+    .btn-ingreso-redes-sociales {
+      width: 100px;
+      height: 40px;
+      display: flex;
+      gap: 8px;
+      font-size: 10px;
+    }
+  
+    .btn-registro-inicio-sesion {
+      gap: 2em;
+      margin: 40px;
+      width: 330px;
+      height: 55px;
+      font-size: 13px;
+    }
+
+    .cont-principal {
+      gap: 5px;
+      width: 200px;
+    }
+  }
