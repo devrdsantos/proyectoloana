@@ -14,13 +14,8 @@ function Faq() {
             <h2 className="subtitle-faq">Comprar en LoanaJeans.com.ar</h2>
           </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          <h3> Tras finalizar tu compra, te enviaremos un email de confirmación con el detalle de la misma.
+Te recordamos que no será posible cancelar o modificar tu pedido si ya se encuentra en un estado avanzado de preparación.</h3>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
@@ -29,13 +24,18 @@ function Faq() {
             <h2 className="subtitle-faq">Envios y Estado del pedido</h2>
           </Accordion.Header>
           <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+          Recibirás actualizaciones del estado de tu pedido por email.
+
+También puedes acceder a esta información a través del apartado Compras. 
+
+Estos son los estados por los que pasará tu pedido:
+
+Comprado: has finalizado correctamente la compra de tu pedido.
+En curso: hemos recibido la información de tu compra.
+En preparación: tu pedido está siendo preparado en el almacén.
+Enviado: el pedido ya ha salido de nuestras instalaciones.
+Recogido por transportista: tu pedido está en camino, lo recibirás próximamente.
+Entregado a cliente: ya has recibido tu pedido.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
