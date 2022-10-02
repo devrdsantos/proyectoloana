@@ -44,7 +44,6 @@ function Footer() {
               </button>
             </div>
             <div className="mb-2">
-<<<<<<< HEAD
               <button className=" button-decoration-footer text-secondary text-decoration-none compras-button-mobile">
                 <Link className=" link-footer-color" to="/jeans">
                   Camperas
@@ -55,11 +54,6 @@ function Footer() {
               <button className=" button-decoration-footer text-secondary text-decoration-none">
                 <Link className=" link-footer-color" to="/jeans">
                   Ofertas
-=======
-              <button className=" button-decoration-footer text-secondary text-decoration-none">
-                <Link className=" link-footer-color" to="/faq">
-                  Ayuda
->>>>>>> 5997d2c2dfa200c4c95dff1831154973a8a952d2
                 </Link>
               </button>
             </div>

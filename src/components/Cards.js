@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState} from "react";
 import styled from "styled-components";
 import Filtros from "./Filtros";
@@ -246,11 +245,6 @@ const CardsHome = styled.div `
         justify-content: center;
         width: 50%;
         background-color: gray;
-=======
-import React from "react";
-import styled from "styled-components";
-import Card from "./Card";
->>>>>>> 5997d2c2dfa200c4c95dff1831154973a8a952d2
 
 function Cards(props) {
 
@@ -273,7 +267,7 @@ function Cards(props) {
     );
   }
 
-const CardSection = styled.section`
+const CardSection = styled.section;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
