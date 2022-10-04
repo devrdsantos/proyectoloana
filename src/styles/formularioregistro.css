@@ -16,7 +16,7 @@ body {
     margin: 1em;
 }
 
-#nombre, #apellido, #genero, #email, #contrasenia {
+#nombre, #apellido, #genero, #email, #contrasenia, #repetircontrasenia {
     width: 400px;
     padding: 10px;
     border: 1px solid #E2E2E2;
@@ -28,7 +28,7 @@ body {
     margin: 16px;
     background-color: black;
     color: white;
-    width: 110px;
+    width: 130px;
     height: 40px;
     border-radius: 10px;
     font-family: 'Outfit', sans-serif;
@@ -64,6 +64,8 @@ body {
 .link-cambio-contrasenia {
     margin: 0;
     font-size: 12px;
+    color: black;
+    text-decoration: none;
 }
 
 .registro-exitoso{
@@ -74,4 +76,29 @@ body {
     background-color: rgb(199, 252, 199);
     border-radius: 3px;
     margin: 0;
+}
+
+@media (max-width: 500px) {
+    .btn-registrarse {
+        margin: 16px;
+        width: 110px;
+        font-size: 14px;
+        height: 35px;
+        padding: 3px;
+    }
+
+    .form-registro {
+        gap: 10px;
+        width: 300px;
+        height: auto;
+        margin: 1em;
+    }
+
+    #nombre, #apellido, #genero, #email, #contrasenia, #repetircontrasenia {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #E2E2E2;
+        font-size: 13px;
+        font-family: 'Outfit', sans-serif;
+    }
 }

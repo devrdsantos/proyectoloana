@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import FormularioInicioSesion from "../FormularioInicioSesion";
 import FormularioRegistro from "../FormularioRegistro.js";
-import loana1 from "../../assets/loana1.png";
+//import loana1 from "../../assets/loana1.png";
 import google from "../../assets/google.png";
 import facebook from "../../assets/facebook.png";
 import "../../styles/enterprofile.css";
+import { Link } from "react-router-dom";
 
 function EnterProfile() {
   const [formularioRegistro, cambiarFormularioRegistro] = useState(false);
@@ -12,9 +13,9 @@ function EnterProfile() {
     <div className="App">
       <div className="contenedor-user-register">
         <div className="cont-principal">
-          <div className="contenedor-logo">
+          {/* <div className="contenedor-logo">
             <img src={loana1} alt="" />
-          </div>
+          </div> */}
 
           <div className="contenedor-formulario">
             <div className="btn-registro-inicio-sesion">
@@ -50,16 +51,16 @@ function EnterProfile() {
             </p>
 
             <div className="contenedor-google-facebook">
-              <span className="btn-ingreso-redes-sociales">
+              <a href="https://google.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
                 {" "}
                 <img src={google} alt="" />
                 <p href="">GOOGLE</p>
-              </span>
-              <span className="btn-ingreso-redes-sociales">
+              </a>
+              <a href="https://facebook.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
                 {" "}
                 <img src={facebook} alt="" />
                 <p href="">FACEBOOK</p>{" "}
-              </span>
+              </a>
             </div>
           </div>
         </div>
