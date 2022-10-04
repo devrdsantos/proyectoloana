@@ -1,6 +1,6 @@
-function OrderBy(ordenar) {
+function OrderBy(props) {
     const handleChange = (e) =>{
-        ordenar(e)
+        props.ordenar(e)
     }
      return (
     <div className="principal_countainer">
