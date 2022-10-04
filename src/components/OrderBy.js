@@ -1,24 +1,25 @@
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
-import Dropdown from "react-bootstrap/Dropdown";
-
-function OrderBy() {
-  return (
-    <Dropdown as={ButtonGroup} className="ms-2">
-      <Button variant="light">Ordenar Por</Button>
-
-      <Dropdown.Toggle split variant="light" id="dropdown-split-basic" />
-
-      <Dropdown.Menu
-      name = "select" 
-      defaultValue="destacados"
-      >
-        <Dropdown.Item value="relevante">Destacados</Dropdown.Item>
-        <Dropdown.Item value="descendente">Mayor precio</Dropdown.Item>
-        <Dropdown.Item value="ascendente">Menor precio</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-  );
+function OrderBy(ordenar) {
+    const handleChange = (e) =>{
+        ordenar(e)
+    }
+     return (
+    <div className="principal_countainer">
+        <div className="filtrar_por">
+            <span> Filtrar por: </span>
+        </div>
+        <div>
+            <select
+            className="menu"
+            defaultValue="relevante"
+            name="select"
+            onChange={handleChange}>
+                <option value="relevante"> Mas relevante </option>
+                <option value="ascendente"> Menor precio </option>
+                <option value="descendente"> Mayor precio </option>
+            </select>
+        </div>
+    </div>
+);
 }
 
 export default OrderBy;

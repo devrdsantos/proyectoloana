@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../styles/header.css";
 import logoHeaderDesktop from "../assets/logoheadernuevo.png";
 import searchIcon from "../assets/search-icon.png";
@@ -9,10 +9,18 @@ import infoVector from "../assets/img__vectores/Info.svg";
 import bagVector from "../assets/img__vectores/bag-2.svg";
 import ModalNavHeaderMobile from "./ModalNavHeaderMobile";
 import { Link } from "react-router-dom";
+import { DataContext } from "./data/DataProvider";
 
 function Header() {
+  const value = useContext(DataContext)
+  const productos = value.productos;
   const [estadoModal, cambiarEstadoModal] = useState(false);
+  const [search, setSearch] = useState("");
 
+  const busqueda = (e) =>{
+    console.log(productos)
+    console.log(e.target.value)
+  }
   return (
     <header>
       {/* ESTE ES EL HEADER DESKTOP QUE SE VA A UTILIZAR PARA ESCRITORIO */}
@@ -66,11 +74,10 @@ function Header() {
           <div className="nav-buttons-desktop">
             <div className="search-container">
               <form
-                action="https://www.google.com/search"
-                method="get"
                 className="search-form-desktop"
               >
                 <input
+                  onChange={busqueda}
                   type="text"
                   className="input-search-desktop"
                   placeholder="Buscar"

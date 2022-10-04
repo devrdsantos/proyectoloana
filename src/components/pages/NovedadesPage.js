@@ -5,8 +5,7 @@ import Cards from "../Cards";
 import OrderBy from "../OrderBy";
 import { DataContext } from "../data/DataProvider";
 function NovedadesPage() {
-  const value = useContext(DataContext);
-  const [productos] = value.productos;
+  const {productos} = useContext(DataContext);
   return (
     <div>
       <PageSectionImage

@@ -10,13 +10,11 @@ function PantalonesPage() {
   const [productos] = value.productos
   return (
     <>
-      <div>
         <PageSectionImage
           ImgPantalones={ImagePantalones}
           h1PageSection={"PANTALONES"}
         />
         <OrderBy />
-      </div>
       <Cards data={productos} />
     </>
   );
