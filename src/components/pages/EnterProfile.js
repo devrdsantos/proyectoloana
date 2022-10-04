@@ -5,7 +5,6 @@ import FormularioRegistro from "../FormularioRegistro.js";
 import google from "../../assets/google.png";
 import facebook from "../../assets/facebook.png";
 import "../../styles/enterprofile.css";
-import { Link } from "react-router-dom";
 
 function EnterProfile() {
   const [formularioRegistro, cambiarFormularioRegistro] = useState(false);
@@ -51,12 +50,18 @@ function EnterProfile() {
             </p>
 
             <div className="contenedor-google-facebook">
-              <a href="https://google.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
+              <a
+                href="https://google.com"
+                className="btn-ingreso-redes-sociales link-cambio-contrasenia"
+              >
                 {" "}
                 <img src={google} alt="" />
                 <p href="">GOOGLE</p>
               </a>
-              <a href="https://facebook.com" className="btn-ingreso-redes-sociales link-cambio-contrasenia">
+              <a
+                href="https://facebook.com"
+                className="btn-ingreso-redes-sociales link-cambio-contrasenia"
+              >
                 {" "}
                 <img src={facebook} alt="" />
                 <p href="">FACEBOOK</p>{" "}

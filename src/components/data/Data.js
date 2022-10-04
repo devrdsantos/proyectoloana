@@ -1,7 +1,3 @@
-import img1 from "../../assets/img_cards/modelo1.png";
-import img2 from "../../assets/img_cards/modelo2.png";
-import img3 from "../../assets/img_cards/modelo3.png";
-import img4 from "../../assets/img_cards/modelo4.png";
 import campera1a from "../../assets/img_cards/camperas/imgCampera1A.png";
 import campera1b from "../../assets/img_cards/camperas/imgCampera1B.png";
 import campera1c from "../../assets/img_cards/camperas/imgCampera1C.png";
