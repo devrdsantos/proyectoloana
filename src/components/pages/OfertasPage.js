@@ -5,16 +5,15 @@ import Cards from "../Cards";
 import OrderBy from "../OrderBy";
 import { DataContext } from "../data/DataProvider";
 function OfertasPage() {
-  const value = useContext(DataContext)
-  const [productos] = value.productos
+  const {products, ordenar} = useContext(DataContext) 
   return (
     <div>
       <PageSectionImage
         ImgPantalones={ImagePantalones}
         h1PageSection={"OFERTAS"}
       />
-      <OrderBy />
-      <Cards data={productos} />
+      <OrderBy ordenar={ordenar} />
+      <Cards data={products} />
     </div>
   );
 }

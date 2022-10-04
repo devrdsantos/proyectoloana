@@ -15,8 +15,6 @@ function Header() {
   const value = useContext(DataContext)
   const productos = value.productos;
   const [estadoModal, cambiarEstadoModal] = useState(false);
-  const [search, setSearch] = useState("");
-
   const busqueda = (e) =>{
     console.log(productos)
     console.log(e.target.value)

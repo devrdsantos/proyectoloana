@@ -14,9 +14,8 @@ function ItemDescriptionPage() {
   const resta = () =>count !== 0 ? setCount(count - 1):console.log("error");
 /*---------------------------------------------------------------------*/
   //Aqui Empieza el uso de contexto de cards.
-  const {productos} = useContext(DataContext);
-
-  const filtrado = productos.filter(e=>e.id<5);
+  const {products} = useContext(DataContext);
+  const filtrado = products.filter(e=>e.id<5);
   return (
     <>
       <ContainerPage>

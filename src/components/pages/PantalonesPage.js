@@ -6,16 +6,15 @@ import { DataContext } from "../data/DataProvider";
 import { useContext } from "react";
 
 function PantalonesPage() {
-  const value = useContext(DataContext)
-  const [productos] = value.productos
+  const {products, ordenar} = useContext(DataContext)
   return (
     <>
         <PageSectionImage
           ImgPantalones={ImagePantalones}
           h1PageSection={"PANTALONES"}
         />
-        <OrderBy />
-      <Cards data={productos} />
+        <OrderBy ordenar={ordenar} />
+      <Cards data={products} />
     </>
   );
 }

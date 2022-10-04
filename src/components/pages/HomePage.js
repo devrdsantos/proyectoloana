@@ -6,8 +6,8 @@ import Mainofertasynovedades from "../Mainofertasynovedades.js";
 import styled from "styled-components";
 import { DataContext } from "../data/DataProvider.js";
 function HomePage() {
-  const {productos} = useContext(DataContext)
-  const filtrado = productos.filter(e=>e.id<5);
+  const {products} = useContext(DataContext)
+  const filtrado = products.filter(e=>e.id<5);
   return (
     <main>
       <CarouselMain />

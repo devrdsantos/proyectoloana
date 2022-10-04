@@ -5,16 +5,15 @@ import OrderBy from "../OrderBy";
 import { useContext} from "react";
 import { DataContext } from "../data/DataProvider";
 const ShortsPage = () => {
-  const {productos} = useContext(DataContext)
-  
+  const {products, ordenar } = useContext(DataContext)
   return (
     <>
         <PageSectionImage
           ImgPantalones={ImagePantalones}
           h1PageSection={"SHORTS"}
         />
-        <OrderBy />
-        <Cards data = {productos} />
+        <OrderBy ordenar= {ordenar} />
+        <Cards data = {products} />
     </>
   );
 };
