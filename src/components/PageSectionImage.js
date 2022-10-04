@@ -45,6 +45,7 @@ const TituloPageSectionImage = styled.div`
   transform: translate (-50% -50%);
   color: white;
   h1 {
+    text-shadow: 2px 1px black;
     font-size: 36px;
     font-family: "Outfit";
   }

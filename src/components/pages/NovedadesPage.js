@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import PageSectionImage from "../PageSectionImage";
-import ImagePantalones from "../../assets/img-pantalones.png";
+import ImagePantalones from "../../assets/img_cards/novedades-seccion-img.jpg";
 import Cards from "../Cards";
 import OrderBy from "../OrderBy";
 import { DataContext } from "../data/DataProvider";
