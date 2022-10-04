@@ -1,7 +1,12 @@
 import React from "react";
+import Faq from "../Faq";
 
 function FaqPage() {
-  return <h1>Pagina de ayuda</h1>;
+  return(
+    <>
+      <Faq />
+    </>
+  );
 }
 
 export default FaqPage;

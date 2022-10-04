@@ -83,13 +83,29 @@
 .color-footer-mobile {
   color: #e2e2e2;
 }
+/* estilos para borde inferior */
+.aux-desktop-border-footer {
+  border: 3px solid white;
+  border-style: solid hidden hidden;
+  padding-right: 100px;
+  padding-top: 1px;
+  margin-right: 400px;
+}
+/* estilos para borde inferior */
+.aux-desktop-border-footerContacto {
+  border: 3px solid white;
+  border-style: solid hidden hidden;
+  padding-right: 230px;
+  padding-top: 1px;
+  margin-right: 400px;
+}
 
 .border-bottom-mobile-footer {
   border-bottom: solid 2px white;
   padding-bottom: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .footer-desktop {
     display: none;
   }
@@ -99,7 +115,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .footer-mobile {
     display: none;
   }
