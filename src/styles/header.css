@@ -128,9 +128,6 @@
   background-color: transparent;
 }
 
-.profile-button-desktop:hover {
-}
-
 .compras-button-desktop {
   border: 0;
   background-color: transparent;
@@ -205,7 +202,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .header-desktop {
     display: none;
   }
@@ -215,7 +212,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .header-mobile {
     display: none;
   }
