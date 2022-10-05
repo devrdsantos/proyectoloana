@@ -107,8 +107,7 @@ import jean12a from "../../assets/img_cards/jeans/imgJean12A.png";
 import jean12b from "../../assets/img_cards/jeans/imgJean12B.png";
 import jean12c from "../../assets/img_cards/jeans/imgJean12C.png";
 
-export const Data = {
-  camperasPage: [
+export const Data = [
     {
       id: 1,
       imagen: [campera1a, campera1b, campera1c],
@@ -117,7 +116,7 @@ export const Data = {
       price: 11500,
       talles: [38, 40, 42, 44],
       descuentos: 10,
-      nuevo: false,
+      seccion : "camperasPage"
     },
     {
       id: 2,
@@ -127,7 +126,7 @@ export const Data = {
       price: 19900,
       talles: [38, 40, 42],
       descuentos: 0,
-      nuevo: false,
+      seccion : "camperasPage"
     },
     {
       id: 3,
@@ -137,7 +136,7 @@ export const Data = {
       price: 16480,
       talles: [38, 40, 42, 48],
       descuentos: 0,
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 4,
@@ -146,7 +145,7 @@ export const Data = {
       title: "CAMPERA ODAS JEAN LIGHT BLUE",
       price: 18500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 5,
@@ -155,7 +154,7 @@ export const Data = {
       title: "CAMPERA PRUSSIA JOYFUL",
       price: 22200,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 6,
@@ -164,7 +163,7 @@ export const Data = {
       title: "CAMPERA PRUSSIA RELIEF",
       price: 9500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 7,
@@ -173,7 +172,7 @@ export const Data = {
       title: "CAMPERA UMA BLEU",
       price: 13750,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 8,
@@ -182,7 +181,7 @@ export const Data = {
       title: "CAMPERA AZUL VESPERTINE",
       price: 15500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 9,
@@ -191,7 +190,7 @@ export const Data = {
       title: "CAMPERA BEIGE ELLIOT WHITE OVERISIZE",
       price: 8525,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 10,
@@ -200,7 +199,7 @@ export const Data = {
       title: "CAMPERA BLANCA PRUSSIA ULLA",
       price: 7990,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 11,
@@ -209,7 +208,7 @@ export const Data = {
       title: "CAMPERA JEAN CELESTE BROOKFIELD",
       price: 10540,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
     {
       id: 12,
@@ -218,235 +217,229 @@ export const Data = {
       title: "CAMPERA LIVIA BLACK",
       price: 12480,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "camperasPage"
     },
-  ],
-
-  pantalonesPage: [
     {
-      id: 1,
+      id: 13,
       imagen: [jean1a, jean1b, jean1c],
       alt: "img not found",
       title: "JEAN AZUL KAJU",
       price: 11500,
       talles: [38, 40, 42, 44],
       descuentos: 10,
-      nuevo: false,
+      seccion : "pantalonesPage",
     },
     {
-      id: 2,
+      id: 14,
       imagen: [jean2a, jean2b, jean2c],
       alt: "img not found",
       title: "JEAN AZUL HI RIGHT STRAIGHT",
       price: 7950,
       talles: [38, 40, 42],
       descuentos: 0,
-      nuevo: false,
+      seccion : "pantalonesPage",
     },
     {
-      id: 3,
+      id: 15,
       imagen: [jean3a, jean3b, jean3c],
       alt: "img not found",
       title: "JEAN AZUL TAPER MUN",
       price: 7200,
       talles: [38, 40, 42, 48],
       descuentos: 0,
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 4,
+      id: 16,
       imagen: [jean4a, jean4b, jean4c],
       alt: "img not found",
       title: "JEAN AZUL PORTSAID BAGGY GIGI",
       price: 6500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 5,
+      id: 17,
       imagen: [jean5a, jean5b, jean5c],
       alt: "img not found",
       title: "JEAN AZUL PRUSSIA CREATIVE",
       price: 5600,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 6,
+      id: 18,
       imagen: [jean6a, jean6b, jean6c],
       alt: "img not found",
       title: "JEAN AZUL SAIL WIDE LEG BERTA",
       price: 7800,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 7,
+      id: 19,
       imagen: [jean7a, jean7b, jean7c],
       alt: "img not found",
       title: "JEAN AZUL UMA RELAX",
       price: 7500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 8,
+      id: 20,
       imagen: [jean8a, jean8b, jean8c],
       alt: "img not found",
       title: "JEAN AZUL YAGMOUR BOYFRIEND",
       price: 4990,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 9,
+      id: 21,
       imagen: [jean9a, jean9b, jean9c],
       alt: "img not found",
       title: "JEAN BLANCO SAIL GALIA",
       price: 9500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 10,
+      id: 22,
       imagen: [jean10a, jean10b, jean10c],
       alt: "img not found",
       title: "JEAN CELESTE HI WAISTED TAPER",
       price: 12320,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 11,
+      id: 23,
       imagen: [jean11a, jean11b, jean11c],
       alt: "img not found",
       title: "JEAN CELESTE YAGMOUR HIGHRISE",
       price: 7490,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
     {
-      id: 12,
+      id: 24,
       imagen: [jean12a, jean12b, jean12c],
       alt: "img not found",
       title: "JEAN NEGRO WANAMA TINA FLORAL",
       price: 8500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "pantalonesPage"
     },
-  ],
-
-  shortsPage: [
     {
-      id: 1,
+      id: 25,
       imagen: [short1a, short1b, short1c],
       alt: "img not found",
       title: "SHORT AZUL DESIDERATA",
       price: 6900,
       talles: [38, 40, 42, 44],
       descuentos: 10,
-      nuevo: false,
+      seccion : "shortsPage",
     },
     {
-      id: 2,
+      id: 26,
       imagen: [short2a, short2b, short2c],
       alt: "img not found",
       title: "SHORT AZUL VITAMINA LIRA 2",
       price: 9900,
       talles: [38, 40, 42],
       descuentos: 0,
-      nuevo: false,
+      seccion : "shortsPage",
     },
     {
-      id: 3,
+      id: 27,
       imagen: [short3a, short3b, short3c],
       alt: "img not found",
       title: "SHORT BEIGE DESTINO COLECTION CEBRA",
       price: 4800,
       talles: [38, 40, 42, 48],
       descuentos: 0,
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 4,
+      id: 28,
       imagen: [short4a, short4b, short4c],
       alt: "img not found",
       title: "SHORT BLANCO STREET LIVIA",
       price: 7300,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 5,
+      id: 29,
       imagen: [short5a, short5b, short5c],
       alt: "img not found",
       title: "SHORT BLANCO VITAMINA PIAZZA",
       price: 6400,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 6,
+      id: 30,
       imagen: [short6a, short6b, short6c],
       alt: "img not found",
       title: "SHORT CELESTE YAGMOUR PILI",
       price: 9200,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 7,
+      id: 31,
       imagen: [short7a, short7b, short7c],
       alt: "img not found",
       title: "SHORT MOZTASA VITAMINA PIAZZA",
       price: 5900,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 8,
+      id: 32,
       imagen: [short8a, short8b, short8c],
       alt: "img not found",
       title: "SHORT NEGRO LA COFRADIA CLIO",
       price: 5500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 9,
+      id: 33,
       imagen: [short9a, short9b, short9c],
       alt: "img not found",
       title: "SHORT NEGRO STREET LIVIA",
       price: 8500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 10,
+      id: 34,
       imagen: [short10a, short10b, short10c],
       alt: "img not found",
       title: "SHORT NEGRO DOLPHIN PROM",
       price: 6700,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 11,
+      id: 35,
       imagen: [short11a, short11b, short11c],
       alt: "img not found",
       title: "SHORT NEGRO KILL SHILDE",
       price: 7800,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
     {
-      id: 12,
+      id: 36,
       imagen: [short12a, short12b, short12c],
       alt: "img not found",
       title: "SHORT NEGRO MELÉ TIRO ALTO CON FAJA",
       price: 7500,
       talles: [38, 40, 42],
-      nuevo: true,
+      seccion : "shortsPage"
     },
-  ],
-};
+  ]
+;

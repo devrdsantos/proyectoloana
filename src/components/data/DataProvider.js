@@ -3,8 +3,7 @@ import { Data } from "./Data";
 export const DataContext = createContext();
 
 export const DataProvider = (props)=>{
-    const data = Data.pantalonesPage;
-    const [products, setProducts] =useState(data);
+    const [products, setProducts] =useState(Data);
     const userDatos = [...products];
     const ordenar = (e) => {
       const ordenAsc = (arr) => arr.sort((a, b) => a.price - b.price);
@@ -17,7 +16,7 @@ export const DataProvider = (props)=>{
           setProducts(ordenDes(userDatos));
           break;
       default:
-          setProducts(data);
+          setProducts(Data);
       }
     }
     return (

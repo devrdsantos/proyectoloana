@@ -6,6 +6,7 @@ import OrderBy from "../OrderBy";
 import { DataContext } from "../data/DataProvider";
 function NovedadesPage() {
   const {products,ordenar} = useContext(DataContext);
+  const filtrado = products.filter(e=>e.seccion==="pantalonesPage")
   return (
     <div>
       <PageSectionImage
@@ -13,7 +14,7 @@ function NovedadesPage() {
         h1PageSection={"NOVEDADES"}
       />
       <OrderBy ordenar={ordenar} />
-      <Cards data={products} />
+      <Cards data={filtrado} />
     </div>
   );
 }

@@ -6,7 +6,8 @@ import { DataContext } from "../data/DataProvider";
 import { useContext } from "react";
 
 function PantalonesPage() {
-  const {products, ordenar} = useContext(DataContext)
+  const {products, ordenar} = useContext(DataContext);
+  const filtrado = products.filter(e=>e.seccion==="pantalonesPage");
   return (
     <>
         <PageSectionImage
@@ -14,7 +15,7 @@ function PantalonesPage() {
           h1PageSection={"PANTALONES"}
         />
         <OrderBy ordenar={ordenar} />
-      <Cards data={products} />
+      <Cards data={filtrado} />
     </>
   );
 }

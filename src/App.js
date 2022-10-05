@@ -22,6 +22,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/item/:itemId" element={<ItemDescriptionPage />} />
           <Route path="/pantalones" element={<PantalonesPage />} />
           <Route path="/shorts" element={<ShortsPage />} />
           <Route path="/camperas" element={<CamperasPage />} />
@@ -29,7 +30,6 @@ function App() {
           <Route path="/novedades" element={<NovedadesPage />} />
           <Route path="/user" element={<EnterProfile />} />
           <Route path="/faq" element={<FaqPage />} />
-          <Route path="/item" element={<ItemDescriptionPage />} />
           <Route path="/nosotros" element={<NosotrosPage />} />
         </Routes>
         <Footer />

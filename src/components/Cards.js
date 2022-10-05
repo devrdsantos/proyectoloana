@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Card from "./Card";
 
 function Cards(props) {
-
   return (
     <CardSection>
       {props.data.map((e) => (
         <Card
+          id={e.id}
           key={e.id}
           talles={e.talles}
           img={e.imagen}

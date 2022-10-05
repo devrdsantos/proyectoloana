@@ -1,3 +1,5 @@
+import "../styles/filtros.css";
+
 function OrderBy(props) {
     const handleChange = (e) =>{
         props.ordenar(e)

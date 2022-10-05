@@ -5,7 +5,8 @@ import Cards from "../Cards";
 import OrderBy from "../OrderBy";
 import { DataContext } from "../data/DataProvider";
 function CamperasPage() {
-  const {products, ordenar} = useContext(DataContext)
+  const {products, ordenar} = useContext(DataContext);
+  const filtrado = products.filter(e=>e.seccion==="camperasPage")
   return (
     <>
       <PageSectionImage
@@ -13,7 +14,7 @@ function CamperasPage() {
         h1PageSection={"CAMPERAS"}
       />
       <OrderBy ordenar={ordenar}  />
-      <Cards data={products} />
+      <Cards data={filtrado} />
     </>
   );
 }

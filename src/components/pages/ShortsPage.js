@@ -5,8 +5,8 @@ import OrderBy from "../OrderBy";
 import { useContext} from "react";
 import { DataContext } from "../data/DataProvider";
 const ShortsPage = () => {
-  const {products, ordenar} = useContext(DataContext);
-  
+  const {products, ordenar} = useContext(DataContext);;
+  const filtrado = products.filter(e=>e.seccion==="shortsPage")
   return (
     <>
       <PageSectionImage
@@ -14,7 +14,7 @@ const ShortsPage = () => {
         h1PageSection={"SHORTS"}
       />
       <OrderBy ordenar={ordenar} />
-      <Cards data={products} />
+      <Cards data={filtrado} />
     </>
   );
 };

@@ -43,7 +43,7 @@ const Card = (props) => {
         <ContenedorSlideShow ref={slideShow}>
           {props.img.map((imagen, index) => (
             <Slide key={index}>
-              <Link to="/item">
+              <Link to={`/item/${props.id}`}>
                 <img src={imagen} alt={props.descripcion} />
               </Link>
             </Slide>
@@ -80,7 +80,7 @@ const Card = (props) => {
       <TituloCard>{props.titulo}</TituloCard>
       <p>${props.precio}</p>
       <Contenedorboton className="button-hover">
-        <Link to="/item">
+        <Link to={`/item/${props.id}`}>
           <BotonInformacion>VER MÁS</BotonInformacion>
         </Link>
       </Contenedorboton>

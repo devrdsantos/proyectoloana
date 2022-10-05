@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import modelo1 from "../../assets/img_cards/modelo1.png";
-import modelo2 from "../../assets/img_cards/modelo2.png";
-import modelo3 from "../../assets/img_cards/modelo3.png";
 import blackstars from "../../assets/img__vectores/blackstars.png";
 import Accordion from "react-bootstrap/Accordion";
 import Cards from "../Cards";
 import { DataContext } from "../data/DataProvider";
 import React,{useState, useContext} from "react";
 import Whyloana from "../Whyloana";
+import { useParams } from "react-router-dom";
 function ItemDescriptionPage() {
   const [count ,setCount] = useState(0);
   const suma = () => setCount(count + 1);
@@ -15,25 +13,27 @@ function ItemDescriptionPage() {
 /*---------------------------------------------------------------------*/
   //Aqui Empieza el uso de contexto de cards.
   const {products} = useContext(DataContext);
+  const {itemId} = useParams()
+  const data = products.find(producto=>producto.id===parseInt(itemId))
   const filtrado = products.filter(e=>e.id<5);
   return (
     <>
       <ContainerPage>
-        <h4>HOME/PANTALONES/<strong>JEAN OCHENTOSO</strong></h4>
+        <h4>HOME/PANTALONES/<strong>{data.title}</strong></h4>
       <ContainerItemDescription>
         <ImagenesChicas>
           <div>
-            <img src={modelo1} alt="" />
+            <img src={data.imagen[0]} alt={data.alt} />
           </div>
           <div>
-            <img src={modelo2} alt="" />
+            <img src={data.imagen[1]} alt={data.alt} />
           </div>
           <div>
-            <img src={modelo3} alt="" />
+            <img src={data.imagen[2]} alt={data.alt} />
           </div>
         </ImagenesChicas>
         <ContainerImgDescription>
-          <img src={modelo1} alt="" />
+          <img src={data.imagen[0]} alt={data.alt} />
         </ContainerImgDescription>
         <div>
           <Estrellas>
@@ -45,8 +45,8 @@ function ItemDescriptionPage() {
             <p>7 OPINIONES</p>
           </Estrellas>
           <TituloyPrecio>
-            <h1>JEAN OCHENTOSO</h1>
-            <p>$13.200</p>
+            <h1>{data.title}</h1>
+            <p>${data.price}</p>
           </TituloyPrecio>
           <Colores>
             <h5>COLORES</h5>
@@ -60,11 +60,11 @@ function ItemDescriptionPage() {
               <p>Ver tabla de talles y medidas</p>
             </TallesText>
             <div>
-              <button>36</button>
-              <button>38</button>
-              <button>40</button>
-              <button>42</button>
-              <button>44</button>
+            {
+              data.talles.map((talle,index)=>(
+                  <button key={index}>{talle}</button>
+              ))
+            }
             </div>
           </Talles>
           <Cantidad>
