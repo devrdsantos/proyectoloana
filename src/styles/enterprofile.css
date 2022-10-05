@@ -111,8 +111,8 @@ a:hover {
   text-decoration: none;
 }
 
-a:visited {
-  color: black;
+.btn-ingreso-redes-sociales:visited {
+  color: white;
 }
 
 .btn-ingreso-redes-sociales p {
