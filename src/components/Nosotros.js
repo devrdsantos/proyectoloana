@@ -17,10 +17,9 @@ function Nosotros() {
             Sobre <span className="sobreSspan">Nosotros</span>
           </h1>
           <p className="textoSobreNosotros">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            adipisci distinctio obcaecati aliquid, quia tempora quis optio
-            repudiandae officia earum? Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.
+          We are a clothing store based in Buenos, Argentina that specializes in the sale of women's clothing.
+
+          With over 5 years of experience, LoanaJeans is an energetic, fresh and vibrant team offering creative talent, industry knowledge and extremely high standards.
           </p>
           <div className="socials">
             <span className="enlaces-nosotros" href="#">
